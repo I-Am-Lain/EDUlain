@@ -1,38 +1,137 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.wrapper {
+  /* background-color: #282c34; */
+  /* background-size: 100%; */
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
   font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.ToDoContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px black solid;
+  margin: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.ToDoList{
+  border: 5px yellow solid;
+}
+
+
+.form{
+  border: 2px red solid;
+}
+
+.about{
+  border: 3px orange solid;
+}
+
+.NavBar{
+  background-color: white;
+  border: 4px green solid;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  z-index: 1; /*always keeps NavBar on top*/
+}
+
+.logo{
+  width: 20px;
+}
+
+.home-container{
+  top: 100px;    /* Positions the Problem components just below NavBar */
+  position: relative;
+  border: 2px yellow solid;
+}
+
+.problem{
+  background-image: url('https://edurain.org/wp-content/uploads/2020/05/1105572-medium-2-e1592224769447.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  border: 2px red solid;
+  height: 1000px;
+  position: relative;
+}
+
+.solution{
+  background-image: url('http://ld-wp.template-help.com/monstroid1/v1/prod-13289/wp-content/uploads/2017/11/home4_bg3.jpg');
+  background-size: cover;
+  position: relative;
+  height: 675px;
+}
+
+body, html {
+  height: 100%;
+}
+
+.advisors{
+  background-image: url('https://www.w3schools.com/howto/img_parallax.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+  height: 1000px;
+}
+
+.offers{
+  background-image: url('https://edurain.org/wp-content/uploads/2020/05/black-college-student-1.png');
+  background-size: cover;
+  position: relative;
+  background-repeat: no-repeat;
+  height: 1025px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.offers h2{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  position: relative;
+  top: 120px;
+  font-size: 39px;
+  
+}
+
+.offer-cards{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  top: 155px;
+  left: 300px;
+}
+
+.offer-card{
+  display: flex;
+  flex-direction: row;
+  border: 3px black solid;
+  width: 565px;
+  height: 200px;
+  margin: 20px;
+  padding-right: 100px;
+}
+
+.offers-file-icon{
+  height: 100px;
+  color: rgb(224, 22, 157);
+  margin-top: 30px;
+  margin-right: 20px;
+  margin-left: 47px;
+}
+
+.offer-card-right-half{
+  margin-top: 50px;
+}
+
+.offer-card-right-half p{
+  /* border: 2px green solid; */
+  font-size: 14px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 600;
 }
