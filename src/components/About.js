@@ -3,9 +3,27 @@ import React from 'react'
 
 const About = () => (
     
-    <div className='about'>
-        <p>hey hey hey!</p>
-        <a href='/'><img className='navbar-brand' src='./assets/images/eduLAIN.png' alt='eduLAIN Logo'/></a>
+    <div className='about container-fluid'>
+
+
+            <div class="row">
+                <div class="col-sm">
+                    One of three columns
+                </div>
+                <div class="col-sm">
+                    One of three columns
+                </div>
+                <div class="col-sm">
+                    One of three columns
+                </div>
+            </div>
+
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" style={{width: '25%'}} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+            </div>
+
+
+        
     </div>
 
 )

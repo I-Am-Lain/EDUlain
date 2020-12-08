@@ -12,9 +12,26 @@ class Dashboard extends React.Component {
 
     render(){
         return(
-            <div className='dashboard'>
-                <p>hey hey hey!</p>
-                <p>I'm a naughty dashboard</p>
+            <div className='dashboard container-fluid'>
+
+
+                <div class="row">
+                    <div class="col-sm">
+                        One of three columns
+                    </div>
+                    <div class="col-sm">
+                        One of three columns
+                    </div>
+                    <div class="col-sm">
+                        One of three columns
+                    </div>
+                </div>
+
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style={{width: '25%'}} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                </div>
+
+
             </div>
         )
     }

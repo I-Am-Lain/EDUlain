@@ -50,7 +50,15 @@ class Login extends React.Component {
     render(){
         return(
             <div className='login-container'>
-                {this.state.error ? <h3 style={{color: 'red'}}>{this.state.error}</h3> : null}
+                {
+                    this.state.error ? 
+                    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                        <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div> 
+                    : 
+                    null
+                }
                 <form onSubmit={this.handleSubmit}>
                     <input type='text' name='username' value={this.state.username} onChange={this.handleChange} placeholder='...username'/>
                     <input type='text' name='password' value={this.state.password} onChange={this.handleChange} placeholder='...password'/>                    

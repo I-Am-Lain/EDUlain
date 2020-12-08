@@ -285,3 +285,10 @@ body, html {
 .sponsors-container img{
   margin: 0 50px 0 50px;
 }
+
+
+
+.login-container div button{
+  height: 17px;
+  width: 17px;
+}

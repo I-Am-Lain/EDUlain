@@ -1,4 +1,7 @@
 .dashboard{
-    position: relative;
-    top: 100px;
+    border: 2px red solid;
+    background-color: salmon;
+    position: absolute;
+    top: 110px;
+    bottom: 0px;
 }
