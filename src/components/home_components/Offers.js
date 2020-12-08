@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 
 import OffersFileIcon from './OffersFileIcon'
 import OffersFindIcon from './OffersFindIcon'
@@ -12,7 +12,7 @@ const Offers = () => (
         <div className='offer-cards'>
 
             <div className='offer-card'>
-                <OffersFileIcon style='offers-file-icon'/>
+                <OffersFileIcon style={'offers-file-icon'}/>
                 <div className='offer-card-right-half'>
                     <h3>FILE</h3>
                     <p>File your FAFSA for free in five minutes 

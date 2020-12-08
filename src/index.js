@@ -6,8 +6,10 @@ import reportWebVitals from './reportWebVitals';
 
 
 import { BrowserRouter, Route } from 'react-router-dom';
-import About from './components/About'
 import NavBar from './components/NavBar'
+import Login from './components/Login'
+import About from './components/About'
+
 
 ReactDOM.render(
   <BrowserRouter>
@@ -15,6 +17,7 @@ ReactDOM.render(
       <NavBar />
       <Route exact path='/' component={App} /> {/* App === Home */}
       <Route exact path='/about' component={About} />
+      <Route exact path='/login' component={Login} />
     </div>
   </BrowserRouter>,
   document.getElementById('root')

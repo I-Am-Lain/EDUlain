@@ -1,6 +1,5 @@
 import logo from './logo.svg';
 import './App.css';
-import ToDoContainer from './components/ToDoContainer'
 import 'semantic-ui-css/semantic.min.css'
 
 import Problem from './components/home_components/Problem'

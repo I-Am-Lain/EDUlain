@@ -54,13 +54,13 @@ const NavBar = () =>
         }}
         >Contact Us</NavLink>
         <NavLink
-        to="/secret"
+        to="/login"
         exact
         style={link}
         activeStyle={{
             background: 'darkblue'
         }}
-        >Get Aid Now</NavLink>
+        >Log In</NavLink>
     </div>;
 
 export default NavBar
