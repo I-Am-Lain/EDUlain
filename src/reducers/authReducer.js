@@ -1,11 +1,16 @@
 
 
-const auth = (state=null, action) => {
+const authReducer = (state=null, action) => {
     switch(action.type){
 
-        case 'LOGIN SUCCESS':
+        case 'LOGIN_SUCCESS':
             return action.user
+
+        case 'LOGOUT_USER':
+            return null
 
         default: return state
     }
 }
+
+export default authReducer

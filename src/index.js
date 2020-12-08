@@ -4,21 +4,34 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+import { Provider } from 'react-redux';
+import { createStore } from 'redux';
+
+import rootReducer from './reducers/rootReducer.js'
 
 import { BrowserRouter, Route } from 'react-router-dom';
 import NavBar from './components/NavBar'
 import Login from './components/Login'
 import About from './components/About'
+import Dashboard from './components/Dashboard'
+
+const store = createStore(rootReducer,
+  window.__REDUX_DEVTOOLS_EXTENSION__ &&
+  window.__REDUX_DEVTOOLS_EXTENSION__()
+);
 
 
 ReactDOM.render(
   <BrowserRouter>
-    <div className='wrapper'>
-      <NavBar />
-      <Route exact path='/' component={App} /> {/* App === Home */}
-      <Route exact path='/about' component={About} />
-      <Route exact path='/login' component={Login} />
-    </div>
+    <Provider store={store}>
+      <div className='wrapper'>
+        <NavBar />
+        <Route exact path='/' component={App} /> {/* App === Home */}
+        <Route exact path='/about' component={About} />
+        <Route exact path='/login' component={Login} />
+        <Route exact path='/dashboard' component={Dashboard}/>
+      </div>
+    </Provider>
   </BrowserRouter>,
   document.getElementById('root')
 );

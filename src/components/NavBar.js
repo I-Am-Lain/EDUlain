@@ -1,4 +1,9 @@
+import React from 'react'
+
 import { NavLink } from 'react-router-dom'
+import { connect } from 'react-redux'
+
+import { logoutUser } from '../actions/'
 
 const link = {
     width: '100%',
@@ -6,9 +11,19 @@ const link = {
     margin: '0 6px 6px',
     textDecoration: 'none',
     color: 'black',
+    background: 'lightblue',
 }
 
-const NavBar = () => 
+const disabledLink = {
+    width: '100%',
+    padding: '12px',
+    margin: '0 6px 6px',
+    textDecoration: 'none',
+    color: 'black',
+    background: 'grey'
+}
+
+const NavBar = (props) => 
     <div className='NavBar'>
         <a href='/'><img className='navbar-brand' src={`${process.env.PUBLIC_URL}/assets/images/eduLAIN.png`} alt='eduLAIN Logo'/></a>
         <NavLink
@@ -53,14 +68,44 @@ const NavBar = () =>
             background: 'darkblue'
         }}
         >Contact Us</NavLink>
-        <NavLink
-        to="/login"
-        exact
-        style={link}
-        activeStyle={{
-            background: 'darkblue'
-        }}
-        >Log In</NavLink>
+        {
+            props.auth ?  // if User is logged in
+            <React.Fragment>
+                <NavLink
+                to='/dashboard'
+                exact
+                style={link}
+                activeStyle={{
+                    background: 'darkblue'
+                }}
+                >Dashboard</NavLink>
+                <NavLink
+                to="/"
+                exact
+                style={link}
+                onClick={props.logoutUser}
+                >Log Out</NavLink>
+            </React.Fragment>
+            :
+            <React.Fragment>
+                <NavLink
+                to='/dashboard'
+                exact
+                style={disabledLink}
+                activeStyle={{
+                    background: 'darkblue'
+                }}
+                >Dashboard</NavLink>
+                <NavLink
+                to="/login"
+                exact
+                style={link}
+                activeStyle={{
+                    background: 'darkblue'
+                }}
+                >Log In</NavLink>
+            </React.Fragment>
+        }
     </div>;
 
-export default NavBar
+export default connect(state => ({ auth: state.auth }), { logoutUser })(NavBar)

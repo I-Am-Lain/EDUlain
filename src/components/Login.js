@@ -30,11 +30,13 @@ class Login extends React.Component {
         fetch('http://localhost:4000/api/v1/auth', authThisUser)
         .then(resp => resp.json())
         .then(json => {
-            console.log(json)
             if (json.error){
                 this.setState({
                     error: json.error
                 })
+            } else {
+                this.props.loginSuccess(json)
+                this.props.history.push('/dashboard')
             }
         })
 
@@ -60,4 +62,4 @@ class Login extends React.Component {
     }
 }
 
-export default Login
+export default connect(state => ({ auth: state.auth }), { loginSuccess })(Login)
