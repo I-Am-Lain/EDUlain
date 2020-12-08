@@ -66,7 +66,7 @@ class Dashboard extends React.Component {
                             Plz no
                         </Button>
 
-                        <DeleteModal show={this.state.deleteShow} onHide={() => this.setState({deleteShow: false})} />
+                        <DeleteModal auth={this.props.auth} show={this.state.deleteShow} onHide={() => this.setState({deleteShow: false})} />
                     </div>
                 </div>
 
