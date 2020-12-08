@@ -6,7 +6,6 @@ import { connect } from 'react-redux'
 import { logoutUser } from '../actions/'
 
 const link = {
-    width: '100%',
     padding: '12px',
     margin: '0 6px 6px',
     textDecoration: 'none',
@@ -15,7 +14,6 @@ const link = {
 }
 
 const disabledLink = {
-    width: '100%',
     padding: '12px',
     margin: '0 6px 6px',
     textDecoration: 'none',

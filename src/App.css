@@ -21,12 +21,19 @@
 
 .NavBar{
   background-color: white;
-  border: 4px green solid;
   display: flex;
   align-items: center;
   position: fixed;
   width: 100%;
   z-index: 1; /*always keeps NavBar on top*/
+}
+
+.NavBar img{
+  margin: 2.5vh 67.5vh 0 2.5vh;
+}
+
+.nav-link:hover{
+  background: red !important;
 }
 
 .logo{
