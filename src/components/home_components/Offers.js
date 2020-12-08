@@ -12,7 +12,7 @@ const Offers = () => (
         <div className='offer-cards'>
 
             <div className='offer-card'>
-                <OffersFileIcon style={'offers-file-icon'}/>
+                <OffersFileIcon className='offers-file-icon'/>
                 <div className='offer-card-right-half'>
                     <h3>FILE</h3>
                     <p>File your FAFSA for free in five minutes 
@@ -22,7 +22,7 @@ const Offers = () => (
             </div>
 
             <div className='offer-card'>
-                <OffersFindIcon style='offers-file-icon'/>
+                <OffersFindIcon className='offers-file-icon'/>
                 <div className='offer-card-right-half'>
                     <h3>FIND</h3>
                     <p>Find scholarships through our extensive database of scholarship partners</p>
@@ -30,7 +30,7 @@ const Offers = () => (
             </div>
             
             <div className='offer-card'>
-                <OffersFundIcon style='offers-file-icon'/>
+                <OffersFundIcon className='offers-file-icon'/>
                 <div className='offer-card-right-half'>
                     <h3>FUND</h3>
                     <p>Fund off-campus housing assistance</p>

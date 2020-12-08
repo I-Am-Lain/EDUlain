@@ -1,10 +1,11 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import { Link } from 'react-router-dom'
 import Button from 'react-bootstrap/Button'
 
 import EditProfile from './EditProfile'
 import DeleteModal from './DeleteModal'
+import UploadModal from './UploadModal'
+import Form from 'react-bootstrap/Form'
 
 
 class Dashboard extends React.Component {
@@ -52,7 +53,7 @@ class Dashboard extends React.Component {
                             Let's do it!
                         </Button>
 
-                        <EditProfile show={this.state.fafsaShow} onHide={() => this.setState({fafsaShow: false})} />
+                        <UploadModal show={this.state.fafsaShow} onHide={() => this.setState({fafsaShow: false})} />
                         {/* <Link to="/FAFSA" class="btn btn-primary">Let's do it!</Link> */}
                     </div>
                 </div>

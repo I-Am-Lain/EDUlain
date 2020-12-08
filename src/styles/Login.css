@@ -1,4 +1,11 @@
 .login-container{
     position: relative;
-    top: 300px;
+    top: 500px;
+
+}
+
+.login-container form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
