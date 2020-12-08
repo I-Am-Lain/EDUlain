@@ -8,7 +8,9 @@ const Offers = () => (
     
     <div className='offers'>
         <h2>WHAT WE OFFER</h2>
+
         <div className='offer-cards'>
+
             <div className='offer-card'>
                 <OffersFileIcon style='offers-file-icon'/>
                 <div className='offer-card-right-half'>
@@ -18,6 +20,7 @@ const Offers = () => (
                     </p>
                 </div>
             </div>
+
             <div className='offer-card'>
                 <OffersFindIcon style='offers-file-icon'/>
                 <div className='offer-card-right-half'>
@@ -25,6 +28,7 @@ const Offers = () => (
                     <p>Find scholarships through our extensive database of scholarship partners</p>
                 </div>
             </div>
+            
             <div className='offer-card'>
                 <OffersFundIcon style='offers-file-icon'/>
                 <div className='offer-card-right-half'>
