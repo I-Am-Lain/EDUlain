@@ -1,7 +1,29 @@
 .dashboard{
     border: 2px red solid;
-    background-color: salmon;
     position: absolute;
     top: 110px;
+    /* THIS FINALLY FILLED THE PAGE TO THE BOTTOM */
     bottom: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgb(46, 10, 175)
+}
+
+.dashboard div p{
+    color: gray;
+}
+
+.fafsa{
+    border: 2px red solid;
+    position: absolute;
+    top: 110px;
+    /* THIS FINALLY FILLED THE PAGE TO THE BOTTOM */
+    bottom: 0px;
+}
+
+.dashboard .card{
+
+    text-align: center;
 }

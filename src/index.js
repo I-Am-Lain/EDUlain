@@ -14,6 +14,7 @@ import NavBar from './components/NavBar'
 import Login from './components/Login'
 import About from './components/About'
 import Dashboard from './components/Dashboard'
+import Fafsa from './components/Fafsa'
 
 const store = createStore(rootReducer,
   window.__REDUX_DEVTOOLS_EXTENSION__ &&
@@ -30,6 +31,7 @@ ReactDOM.render(
         <Route exact path='/about' component={About} />
         <Route exact path='/login' component={Login} />
         <Route exact path='/dashboard' component={Dashboard}/>
+        <Route exact path='/FAFSA' component={Fafsa}/>
       </div>
     </Provider>
   </BrowserRouter>,
