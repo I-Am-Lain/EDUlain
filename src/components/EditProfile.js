@@ -40,7 +40,7 @@ class EditProfile extends React.Component{
             body: JSON.stringify(this.state)
         }
         
-        fetch(`http://localhost:4000/api/v1/users/${this.props.auth.id}`, editedUser)
+        fetch(`http://edu-lain-api.herokuapp.com/api/v1/users/${this.props.auth.id}`, editedUser)
         .then(resp => resp.json())
         .then(json => console.log(json))
     }
