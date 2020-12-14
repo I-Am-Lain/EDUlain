@@ -1,0 +1,19 @@
+.about{
+    /* border: 3px orange solid; */
+    background-image: url('https://www.shorpy.com/files/images/32315u.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    
+}
+  
+.about span{
+    color: white;
+    position: absolute;
+    top: 850px;
+    left: 1200px;
+}

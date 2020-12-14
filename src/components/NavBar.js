@@ -23,7 +23,7 @@ const disabledLink = {
 
 const NavBar = (props) => 
     <div className='NavBar'>
-        <a href='/'><img className='navbar-brand' src={`${process.env.PUBLIC_URL}/assets/images/eduLAIN.png`} alt='eduLAIN Logo'/></a>
+        <a href='/'><img className='navbar-brand' src={`${process.env.PUBLIC_URL}/assets/images/eduLAIN2.png`} alt='eduLAIN Logo'/></a>
         <NavLink
         to="/"
         /* set exact so it knows to only set activeStyle when route is deeply equal to link */

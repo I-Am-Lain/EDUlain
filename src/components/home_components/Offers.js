@@ -8,6 +8,7 @@ const Offers = () => (
     
     <div className='offers'>
         <h2>WHAT WE OFFER</h2>
+        
 
         <div className='offer-cards'>
 

@@ -1,6 +1,7 @@
 @import "./styles/Login.css";
 @import "./styles/Dashboard.css";
 @import "./styles/Mission.css";
+@import "./styles/About.css";
 
 .wrapper {
   /* background-color: #282c34; */
@@ -16,9 +17,6 @@
   /* border: 2px red solid; */
 }
 
-.about{
-  /* border: 3px orange solid; */
-}
 
 .NavBar{
   background-color: white;
@@ -76,7 +74,7 @@ body, html {
   background-attachment: fixed;
   background-size: cover;
   position: relative;
-  height: 1700px;
+  height: 1750px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -123,13 +121,21 @@ body, html {
 .offers-file-icon{
   height: 100px;
   color: rgb(224, 22, 157);
-  margin-top: 30px;
+  margin-top: 45px;
   margin-right: 20px;
   margin-left: 47px;
 }
 
-.offer-card-right-half{
+.offers-fund-icon{
+  height: 68px;
+  color: rgb(224, 22, 157);
   margin-top: 50px;
+  margin-right: 20px;
+  margin-left: 40px;
+}
+
+.offer-card-right-half{
+  margin-top: 60px;
 }
 
 .offer-card-right-half p{
@@ -143,8 +149,9 @@ body, html {
   /* border: 2px green solid; */
   position: absolute;
   top: 300px;
-  width: 525px;
+  width: 550px;
   left: 400px;   /* I'm gonna have to change this stuff so it 'flexes' around*/
+  font-size: 26px;
 }
 
 .problem-content h2{
@@ -155,7 +162,7 @@ body, html {
 
 .solution-content{
   position: relative;
-  top: 150px;
+  top: 130px;
   left: 1025px;
   width: 525px;
 }
@@ -168,7 +175,7 @@ body, html {
 
 .team{
   /* border: 2px red solid; */
-  height: 1150px;
+  height: 1300px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -278,14 +285,27 @@ body, html {
   width: 330px;
   /* Height fixes the image cards not lining up!!!!! */
   height: 400px;
-  margin: 0 20px 0 20px;
+  margin: 0 30px 0 30px;
   text-align: center;
+  word-wrap: break-word;
 }
 
 .advisors-content h2{
   font-weight: 600;
   font-size: 39px;
   font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.advisors-card h3{
+  font-size: 35px;
+}
+
+.advisors-card p{
+  font-size: 20px;
+}
+
+.advisors-card span{
+  font-size: 20px;
 }
 
 .advisors-card img{

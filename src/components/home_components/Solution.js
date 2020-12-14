@@ -6,6 +6,7 @@ const Solution = () => (
     <div className='solution'>
         <div className='solution-content'>
             <h2>THE SOLUTION</h2>
+            <hr />
             
             <p>
                 EduRAIN provides you with a one-stop software to apply for financial aid, 

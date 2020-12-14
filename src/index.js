@@ -17,6 +17,8 @@ import Dashboard from './components/Dashboard'
 import Fafsa from './components/Fafsa'
 
 import Mission from './components/Mission'
+import Services from './components/Services'
+import Contact from './components/Contact'
 
 const store = createStore(rootReducer,
   window.__REDUX_DEVTOOLS_EXTENSION__ &&
@@ -32,6 +34,8 @@ ReactDOM.render(
         <Route exact path='/' component={App} /> {/* App === Home */}
         <Route exact path='/mission' component={Mission} />
         <Route exact path='/about' component={About} />
+        <Route exact path='/services' component={Services} />
+        <Route exact path='/contact' component={Contact} />
         <Route exact path='/login' component={Login} />
         <Route exact path='/dashboard' component={Dashboard}/>
         <Route exact path='/FAFSA' component={Fafsa}/>

@@ -6,6 +6,7 @@ const Team = () => (
     <div className='team'>
         <div className='team-content'>
             <h2>Our Team</h2>
+            <hr />
 
             <p>
                 We look just like you. We recently experienced the pain of applying for college.

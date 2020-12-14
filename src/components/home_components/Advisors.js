@@ -6,6 +6,7 @@ const Advisors = () => (
     <div className='advisors'>
         <div className='advisors-content'>
             <h2>OUR ADVISORS</h2>
+            <hr />
 
             <p>
                 Our advisors range from Industry Experts to 
@@ -16,19 +17,19 @@ const Advisors = () => (
             <div className='advisors-container'>
                 <div className='advisors-card'>
                     <img src='https://edurain.org/wp-content/uploads/2020/06/greg-taylor.png' alt='Greg Taylor'/>
-                    <p><span>Greg Taylor</span></p>
+                    <h3>Greg Taylor</h3>
                     <p><span>Former Vice President Operations Fontbonne university</span></p>
                 </div>
 
                 <div className='advisors-card'>
                     <img src='https://edurain.org/wp-content/uploads/2020/06/Screen-Shot-2020-06-16-at-12.03.41-AM.png' alt='Joshua Walehwa'/>
-                    <p><span>Joshua Walehwa</span></p>
-                    <p><span>Associate Director of Admissions & Recruitment, Brown School Washington university Saint Louis</span></p>
+                    <h3>Joshua Walehwa</h3>
+                    <p>Associate Director of Admissions & Recruitment, Brown School Washington university Saint Louis</p>
                 </div>
 
                 <div className='advisors-card'>
                     <img src='https://edurain.org/wp-content/uploads/2020/06/Screen-Shot-2020-06-16-at-12.03.17-AM.png' alt='Marie Thornton'/>
-                    <p><span>Marie Thornton</span></p>
+                    <h3>Marie Thornton</h3>
                     <p><span>Former Admissions Officer Ranken Technical College</span></p>
                 </div>
             </div>
@@ -37,19 +38,19 @@ const Advisors = () => (
             <div className='advisors-container'>
                 <div className='advisors-card'>
                     <img src='https://edurain.org/wp-content/uploads/2020/06/Screen-Shot-2020-06-16-at-12.02.02-AM.png' alt='Lisa Brougham'/>
-                    <p><span>Lisa Brougham</span></p>
+                    <h3>Lisa Brougham</h3>
                     <p><span>Former School Counselor Saint Louis Public School District</span></p>
                 </div>
                 
                 <div className='advisors-card'>
                     <img src='https://edurain.org/wp-content/uploads/2020/06/unnamed-1.png' alt='Susan McLaughlin'/>
-                    <p><span>Susan McLaughlin</span></p>
+                    <h3>Susan McLaughlin</h3>
                     <p><span>Former VP of Marketing at Charter</span></p>
                 </div>
 
                 <div className='advisors-card'>
                     <img src='https://edurain.org/wp-content/uploads/2020/06/Screen-Shot-2020-06-16-at-12.02.47-AM.png' alt='Mike Bynum'/>
-                    <p><span>Mike Bynum</span></p>
+                    <h3>Mike Bynum</h3>
                     <p><span>Accelerator Coordinator Stadia Ventures</span></p>
                 </div>
             </div>
