@@ -16,6 +16,8 @@ import About from './components/About'
 import Dashboard from './components/Dashboard'
 import Fafsa from './components/Fafsa'
 
+import Mission from './components/Mission'
+
 const store = createStore(rootReducer,
   window.__REDUX_DEVTOOLS_EXTENSION__ &&
   window.__REDUX_DEVTOOLS_EXTENSION__()
@@ -28,6 +30,7 @@ ReactDOM.render(
       <div className='wrapper'>
         <NavBar />
         <Route exact path='/' component={App} /> {/* App === Home */}
+        <Route exact path='/mission' component={Mission} />
         <Route exact path='/about' component={About} />
         <Route exact path='/login' component={Login} />
         <Route exact path='/dashboard' component={Dashboard}/>

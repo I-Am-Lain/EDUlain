@@ -1,0 +1,120 @@
+.mission-container{
+    position: absolute;
+    top: 135px;
+    bottom: 0;
+    width: 100%;
+}
+
+.mission-header{
+    background-image: url('https://edurain.org/wp-content/uploads/2020/06/graduation-min.jpg');
+    position: relative;
+    height: 183px;
+    background-position: 0 -550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.mission-header h1{
+    color: white;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.mission-content{
+    /* background-color: aquamarine; */
+    width: 600px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 400px;
+    font-size: 24px;
+}
+
+.why-choose-us{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: salmon; */
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.why-choose-us h2{
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.choosing-factors{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.choosing-factors span{
+    font-weight: bold;
+    font-size: 1em
+}
+
+.x-factor{
+    margin: 0 75px 0 75px;
+    display: flex;
+    flex-direction: column;
+}
+
+.x-factor-icon{
+    height: 72px;
+    color: royalblue;
+    border: 2px;
+}
+
+.our-promise{ 
+    padding-top: 100px; 
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(gray, white);
+}
+
+.our-promise h1{
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.our-promise-content{
+    width: 105vh;
+    font-size: .68em
+}
+
+.partnerships{
+    margin-top: 225px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.partnerships h1{
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.partnership-images-container{
+    margin-top: 90px;
+}
+
+.partnership-images-container img{
+    margin: 0 50px 0 50px;
+}
+
+
+hr {
+    width: 200px;
+    border: 0;
+    border-top: 5px solid #000;
+    margin: 1em 0;
+    padding: 0;
+}
