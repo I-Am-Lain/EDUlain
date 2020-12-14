@@ -27,7 +27,7 @@ class Login extends React.Component {
             body: JSON.stringify(this.state)
         }
         
-        fetch('http://edu-lain-api.herokuapp.com/api/v1/auth', authThisUser)
+        fetch('https://edu-lain-api.herokuapp.com/api/v1/auth', authThisUser)
         .then(resp => resp.json())
         .then(json => {
             if (json.error){

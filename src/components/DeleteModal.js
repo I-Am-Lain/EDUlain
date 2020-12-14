@@ -9,7 +9,7 @@ class DeleteModal extends React.Component {
     handleClick = () => {
         console.log('foo')
     
-        fetch(`http://edu-lain-api.herokuapp.com/api/v1/users/${this.props.auth.id}`, {method: 'DELETE'})
+        fetch(`https://edu-lain-api.herokuapp.com/api/v1/users/${this.props.auth.id}`, {method: 'DELETE'})
         .then(resp => resp.json())
         .then(json => 
             this.props.history.push('/')
