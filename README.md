@@ -2,7 +2,7 @@ EDUlain
 -------
 This is a fully deployed website, accessible at https://edu-lain.herokuapp.com/
 
-EDUlain was a 3-4 day project I decided to build, re-creating the actual website of a company--EDUrain.
+EDUlain was a 3-4 day project I decided to build, re-creating the actual website of a company--EDUrain. Found at https://edurain.org
 
 Technology
 ----------
