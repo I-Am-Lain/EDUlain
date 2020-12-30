@@ -6,24 +6,30 @@ import { connect } from 'react-redux'
 import { logoutUser } from '../actions/'
 
 const link = {
-    padding: '12px',
-    margin: '0 6px 6px',
+    padding: '1%',
+    margin: '1% .5% 1% .5%',
     textDecoration: 'none',
     color: 'black',
     background: 'lightblue',
+    float: 'right'
 }
 
 const disabledLink = {
-    padding: '12px',
-    margin: '0 6px 6px',
+    padding: '1%',
+    margin: '1% .5% 1% .5%',
     textDecoration: 'none',
     color: 'black',
-    background: 'grey'
+    background: 'grey',
+    float: 'right'
+
 }
 
 const NavBar = (props) => 
     <div className='NavBar'>
+        
+        <div className='container-fluid'>    
         <a href='/'><img className='navbar-brand' src={`${process.env.PUBLIC_URL}/assets/images/eduLAIN2.png`} alt='eduLAIN Logo'/></a>
+            
         <NavLink
         to="/"
         /* set exact so it knows to only set activeStyle when route is deeply equal to link */
@@ -104,6 +110,7 @@ const NavBar = (props) =>
                 >Log In</NavLink>
             </React.Fragment>
         }
+        </div>
     </div>;
 
 export default connect(state => ({ auth: state.auth }), { logoutUser })(NavBar)
