@@ -2,7 +2,7 @@ EDUlain
 -------
 This is a fully deployed website, accessible at https://edu-lain.herokuapp.com/
 
-For Log-In, try:
+For Log-In:
   Username: 'foo'
   Password: 'bar'
 
