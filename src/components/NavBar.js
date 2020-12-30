@@ -7,28 +7,26 @@ import { logoutUser } from '../actions/'
 
 const link = {
     padding: '1%',
-    margin: '1% .5% 1% .5%',
+    margin: '1% .5% 1% 0',
     textDecoration: 'none',
     color: 'black',
     background: 'lightblue',
-    float: 'right'
 }
 
 const disabledLink = {
     padding: '1%',
-    margin: '1% .5% 1% .5%',
+    margin: '1% .5% 1% 0',
     textDecoration: 'none',
     color: 'black',
     background: 'grey',
-    float: 'right'
 
 }
 
 const NavBar = (props) => 
     <div className='NavBar'>
-        
-        <div className='container-fluid'>    
         <a href='/'><img className='navbar-brand' src={`${process.env.PUBLIC_URL}/assets/images/eduLAIN2.png`} alt='eduLAIN Logo'/></a>
+        
+        <div className='container-fluid' style={{paddingLeft: '20%'}}>    
             
         <NavLink
         to="/"
