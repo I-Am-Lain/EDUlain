@@ -7,13 +7,16 @@ import DeleteModal from './DeleteModal'
 import UploadModal from './UploadModal'
 import Form from 'react-bootstrap/Form'
 
+import HousingModal from './HousingModal'
+
 
 class Dashboard extends React.Component {
 
     state = {
         editShow: false,
         fafsaShow: false,
-        deleteShow: false
+        deleteShow: false,
+        housingShow: false
     }
     
     componentDidMount(){
@@ -50,7 +53,7 @@ class Dashboard extends React.Component {
                         <p class="card-text">Send your FAFSA in minutes :)</p>
 
                         <Button variant="primary" onClick={() => this.setState({ fafsaShow: true})}>
-                            Let's do it!
+                            Let's do it
                         </Button>
 
                         <UploadModal show={this.state.fafsaShow} onHide={() => this.setState({fafsaShow: false})} />
@@ -61,13 +64,13 @@ class Dashboard extends React.Component {
                 <div class="card" style={{width: '32rem'}}>
                     <img style={{height: '25rem'}} src="https://i2-prod.mirror.co.uk/incoming/article9536038.ece/ALTERNATES/s615/1_Grim-Reaper.jpg" class="card-img-top" alt="..."/>
                     <div class="card-body">
-                        <h2 class="card-title">Delete My Account</h2>
-                        <p class="card-text">:(((</p>
-                        <Button variant="primary" onClick={() => this.setState({ deleteShow: true})}>
-                            Plz no
+                        <h2 class="card-title">Find Housing</h2>
+                        <p class="card-text">yes plz</p>
+                        <Button variant="primary" onClick={() => this.setState({ housingShow: true})}>
+                            Let's Go!!!
                         </Button>
 
-                        <DeleteModal auth={this.props.auth} show={this.state.deleteShow} onHide={() => this.setState({deleteShow: false})} />
+                        <HousingModal auth={this.props.auth} show={this.state.housingShow} onHide={() => this.setState({housingShow: false})} />
                     </div>
                 </div>
 
