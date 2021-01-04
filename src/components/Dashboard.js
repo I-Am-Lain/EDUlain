@@ -36,9 +36,9 @@ class Dashboard extends React.Component {
                     <img style={{height: '25rem'}} src="https://cdn.proschoolonline.com/wp-content/uploads/2019/03/6-types-of-people-you-must-add-to-your-network.jpg" class="card-img-top" alt="..."/>
                     <div class="card-body">
                         <h2 class="card-title">Edit Profile</h2>
-                        <p class="card-text">Tell us more about you.... ;)</p>
+                        <p class="card-text">Tell us more about you ;)</p>
                         <Button variant="primary" onClick={() => this.setState({ editShow: true})}>
-                            Sounds non-invasive!
+                            Sounds Great!
                         </Button>
 
                         <EditProfile show={this.state.editShow} onHide={() => this.setState({editShow: false})} />
@@ -62,7 +62,7 @@ class Dashboard extends React.Component {
                 </div>
 
                 <div class="card" style={{width: '32rem'}}>
-                    <img style={{height: '25rem'}} src="https://i2-prod.mirror.co.uk/incoming/article9536038.ece/ALTERNATES/s615/1_Grim-Reaper.jpg" class="card-img-top" alt="..."/>
+                    <img style={{height: '25rem'}} src="https://www.toonpool.com/user/31897/files/apartment_life_1997005.jpg" class="card-img-top" alt="..."/>
                     <div class="card-body">
                         <h2 class="card-title">Find Housing</h2>
                         <p class="card-text">yes plz</p>

@@ -29,8 +29,8 @@ class HousingModal extends React.Component {
             <Modal.Body>
                 <h2>Search a location for housing!</h2>
                 <input type='text'/>
-                <Button variant="success" onClick={this.handleClick} >Yep! Bye.</Button>
-                <Button variant="danger" onClick={this.props.onHide} >Wait I messed up, baby</Button>
+                <Button variant="success" onClick={this.handleClick} >Search</Button>
+                <Button variant="danger" onClick={this.props.onHide} >Go Back</Button>
                 <MapContainer />
             </Modal.Body>
             <Modal.Footer>
