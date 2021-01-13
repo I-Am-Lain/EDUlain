@@ -8,9 +8,51 @@ import MapContainer from './MapContainer'
 
 class HousingModal extends React.Component {
 
+    state = {
+        addresses: [{lat: 47.359423, lon: -122.021071}, { lat: 42.2808, lng: -83.7430}],
+        center: { lat: 42.2808, lng: -83.7430 }
+    }
+
+    componentDidMount(){
+        fetch("https://realtor.p.rapidapi.com/properties/v2/list-for-rent?city=Ann%20Arbor&state_code=MI&limit=200&offset=0&sort=relevance", {
+            "method": "GET",
+            "headers": {
+                "x-rapidapi-key": "ef0ce8ece4msh43243638f52d430p145f5fjsna7d299237306",
+                "x-rapidapi-host": "realtor.p.rapidapi.com"
+            }
+        })
+        .then(resp => resp.json())
+        .then(json => {
+
+            // console.log(json.properties.map(pro => {return {lat: pro.address.lat, lng: pro.address.lng}}))
+
+            this.setState({
+                ...this.state,
+                addresses: json.properties.map(pro => {return {lat: pro.address.lat, lng: pro.address.lon}})
+            })
+
+        })
+    }
 
     handleClick = () => {
-        console.log('not yet :)')
+        fetch("https://realtor.p.rapidapi.com/properties/v2/list-for-rent?city=New%20York%20City&state_code=NY&limit=50&offset=0&sort=relevance", {
+            "method": "GET",
+            "headers": {
+                "x-rapidapi-key": "ef0ce8ece4msh43243638f52d430p145f5fjsna7d299237306",
+                "x-rapidapi-host": "realtor.p.rapidapi.com"
+            }
+        })
+        .then(resp => resp.json())
+        .then(json => {
+
+            // console.log(json.properties.map(pro => {return {lat: pro.address.lat, lng: pro.address.lon}}))
+
+            this.setState({
+                addresses: json.properties.map(pro => {return {lat: pro.address.lat, lng: pro.address.lon}}),
+                center: {lat: 40.7128, lng: -74.0060}
+            })
+
+        })
     }
 
     render(){
@@ -31,7 +73,7 @@ class HousingModal extends React.Component {
                 <input type='text'/>
                 <Button variant="success" onClick={this.handleClick} >Search</Button>
                 <Button variant="danger" onClick={this.props.onHide} >Go Back</Button>
-                <MapContainer />
+                <MapContainer addresses={this.state.addresses} center={this.state.center}/>
             </Modal.Body>
             <Modal.Footer>
                 <Button onClick={this.props.onHide}>Close</Button>

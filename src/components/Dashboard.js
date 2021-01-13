@@ -32,40 +32,40 @@ class Dashboard extends React.Component {
         return(
             <div className='dashboard container-fluid'>
 
-                <div class="card" style={{width: '32rem'}}>
-                    <img style={{height: '25rem'}} src="https://cdn.proschoolonline.com/wp-content/uploads/2019/03/6-types-of-people-you-must-add-to-your-network.jpg" class="card-img-top" alt="..."/>
-                    <div class="card-body">
-                        <h2 class="card-title">Edit Profile</h2>
-                        <p class="card-text">Tell us more about you ;)</p>
+                <div className="card" style={{width: '32rem'}}>
+                    <img style={{height: '25rem'}} src="https://cdn.proschoolonline.com/wp-content/uploads/2019/03/6-types-of-people-you-must-add-to-your-network.jpg" className="card-img-top" alt="..."/>
+                    <div className="card-body">
+                        <h2 className="card-title">Edit Profile</h2>
+                        <p className="card-text">Tell us more about you ;)</p>
                         <Button variant="primary" onClick={() => this.setState({ editShow: true})}>
                             Sounds Great!
                         </Button>
 
                         <EditProfile show={this.state.editShow} onHide={() => this.setState({editShow: false})} />
-                        {/* <Link to="/" class="btn btn-primary" >Sounds non-invasive!</Link> */}
+                        {/* <Link to="/" className="btn btn-primary" >Sounds non-invasive!</Link> */}
                     </div>
                 </div>
 
-                <div class="card" style={{width: '32rem'}}>
-                    <img style={{height: '25rem'}} src="https://www.mrflemingscience.com/uploads/5/7/1/1/57111759/paper-airplanes-shutterstock-43792207-800x460_orig.jpg" class="card-img-top" alt="..."/>
-                    <div class="card-body">
-                        <h2 class="card-title">E-File FAFSA</h2>
-                        <p class="card-text">Send your FAFSA in minutes :)</p>
+                <div className="card" style={{width: '32rem'}}>
+                    <img style={{height: '25rem'}} src="https://www.mrflemingscience.com/uploads/5/7/1/1/57111759/paper-airplanes-shutterstock-43792207-800x460_orig.jpg" className="card-img-top" alt="..."/>
+                    <div className="card-body">
+                        <h2 className="card-title">E-File FAFSA</h2>
+                        <p className="card-text">Send your FAFSA in minutes :)</p>
 
                         <Button variant="primary" onClick={() => this.setState({ fafsaShow: true})}>
                             Let's do it
                         </Button>
 
                         <UploadModal show={this.state.fafsaShow} onHide={() => this.setState({fafsaShow: false})} />
-                        {/* <Link to="/FAFSA" class="btn btn-primary">Let's do it!</Link> */}
+                        {/* <Link to="/FAFSA" className="btn btn-primary">Let's do it!</Link> */}
                     </div>
                 </div>
 
-                <div class="card" style={{width: '32rem'}}>
-                    <img style={{height: '25rem'}} src="https://www.toonpool.com/user/31897/files/apartment_life_1997005.jpg" class="card-img-top" alt="..."/>
-                    <div class="card-body">
-                        <h2 class="card-title">Find Housing</h2>
-                        <p class="card-text">yes plz</p>
+                <div className="card" style={{width: '32rem'}}>
+                    <img style={{height: '25rem'}} src="https://www.toonpool.com/user/31897/files/apartment_life_1997005.jpg" className="card-img-top" alt="..."/>
+                    <div className="card-body">
+                        <h2 className="card-title">Find Housing</h2>
+                        <p className="card-text">yes plz</p>
                         <Button variant="primary" onClick={() => this.setState({ housingShow: true})}>
                             Let's Go!!!
                         </Button>
@@ -74,8 +74,8 @@ class Dashboard extends React.Component {
                     </div>
                 </div>
 
-                {/* <div class="progress">
-                    <div class="progress-bar" role="progressbar" style={{width: '25%'}} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                {/* <div className="progress">
+                    <div className="progress-bar" role="progressbar" style={{width: '25%'}} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
                 </div> */}
 
 
