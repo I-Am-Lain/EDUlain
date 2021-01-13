@@ -80,7 +80,7 @@ const Services = (props) => {
         fetch(`https://realtor.p.rapidapi.com/properties/v2/list-for-rent?city=${text.split(' ').join('%20')}&state_code=MI&limit=50&offset=0&sort=relevance`, {
             "method": "GET",
             "headers": {
-                "x-rapidapi-key": "ef0ce8ece4msh43243638f52d430p145f5fjsna7d299237306",
+                "x-rapidapi-key": process.env.REACT_APP_RAPID_API_KEY,
                 "x-rapidapi-host": "realtor.p.rapidapi.com"
             }
         })
