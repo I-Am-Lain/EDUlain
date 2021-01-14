@@ -20,6 +20,9 @@ import Mission from './components/Mission'
 import Services from './components/Services'
 import Contact from './components/Contact'
 
+import 'shards-ui/dist/css/shards.min.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 const store = createStore(rootReducer,
   window.__REDUX_DEVTOOLS_EXTENSION__ &&
   window.__REDUX_DEVTOOLS_EXTENSION__()

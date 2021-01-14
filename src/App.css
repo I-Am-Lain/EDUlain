@@ -331,8 +331,17 @@ body, html {
   height: 80vh;
 }
 
+/* THIS CONTROLS HOW LARGE THE 'FUND PAGE COMPONENT' WILL BE WIDTH-WISE*/
 @media (min-width: 1200px){
   .container, .container-lg, .container-md, .container-sm, .container-xl {
-      max-width: 1920px !important;
+      max-width: 100% !important;
   }
+}
+
+.rentals-container {
+  border: 5px blue solid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }

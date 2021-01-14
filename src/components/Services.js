@@ -1,15 +1,13 @@
 import React, { useState } from 'react'
 
-import { Container, Card, CardBody, Button, InputGroup, InputGroupAddon } from "shards-react";
+import { Container, Card, CardBody, Button, InputGroup, InputGroupAddon, FormInput } from "shards-react";
 import styled from 'styled-components';
 
-import 'shards-ui/dist/css/shards.min.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-
-import { FormInput } from "shards-react";
-
-
 import MapContainer from './MapContainer'
+import CardContainer from './CardContainer'
+
+
+
 
 const StyledFundPage = styled(Container)`
     display: flex;
@@ -27,7 +25,6 @@ const StyledFundPage = styled(Container)`
     top: 110px;
     border: 5px green solid;
     bottom: 0px;
-    
 `;
 
 const StyledInputGroup = styled(InputGroup)`
@@ -67,16 +64,34 @@ const StyledFundCard = styled(Card)`
 
 
 
+/* justify-content: center == was producing weird display */
+/* justify-content: flex-start more proper */
+
+/* this, or the @media container, has an inner padding of 15px on left and right sides.*/
+const StyledMapPage = styled(Container)`
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    position: absolute;
+    top: 110px;
+    border: 5px purple solid;
+    bottom: 0px;
+    
+`;
+
+
+
 const Services = (props) => { 
 
     const [thing, setThing] = useState(false)
     const [text, setText] = useState('')
-    // const [newCenter, setNewCenter] = useState(null)
     const [rentals, setRentals] = useState([{ lat: 42.2808, lng: -83.7430}])
 
 
-
     const handleClick = () => {
+        //  NEED TO ADD VALIDATION, OR BETTER WAY TO TAKE A RAW SEARCH
+        //  OR -- USE GOOGLE MAPS AUTOCOMPLETE FOR PLACES
         fetch(`https://realtor.p.rapidapi.com/properties/v2/list-for-rent?city=${text.split(' ').join('%20')}&state_code=MI&limit=50&offset=0&sort=relevance`, {
             "method": "GET",
             "headers": {
@@ -94,6 +109,7 @@ const Services = (props) => {
             setThing(true)
         })
     }
+
     
 
 
@@ -101,8 +117,10 @@ const Services = (props) => {
 
 
     thing ?
-
-    <MapContainer myInput={text} rentals={rentals} />
+    <StyledMapPage>
+        <CardContainer />
+        <MapContainer myInput={text} rentals={rentals} />
+    </StyledMapPage>
     :
     <StyledFundPage>
 

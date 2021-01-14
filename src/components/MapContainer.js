@@ -5,20 +5,6 @@ import { Map, GoogleApiWrapper, Marker } from 'google-maps-react';
 import Button from 'react-bootstrap/Button'
 
 
-// let dataPoints = [{lat: 47.359423, lon: -122.021071},
-//     {lat: 47.2052192687988, lon: -121.988426208496},
-//     {lat: 47.6307081, lon: -122.1434325},
-//     {lat: 47.3084488, lon: -122.2140121},
-//     {lat: 47.5524695, lon: -122.0425407},
-//     {lat: 38.530280, lon: -90.210310},
-//     {lat: 38.430280, lon: -90.220310},
-//     {lat: 38.330280, lon: -90.230310},
-//     {lat: 38.230280, lon: -90.240310},
-//     {lat: 38.130280, lon: -90.250310},
-//     {lat: 42.2808, lon: -83.7430},
-//     {lat: 41.8781, lon: -87.6298},
-//     ]
-
 // const displayMarkers = (rentals) => {
 //     return rentals.map((pro, index) => {
 //         return <Marker key={index} id={index} position={{
@@ -74,7 +60,7 @@ const MapContainer = (props) => {
                         onClick={() => console.log("You clicked me!")} />
                     })
                 }
-                <Button variant="warning" onClick={() => {alert('foo')}} >LET'S GO</Button>
+                {/* <Button variant="warning" onClick={() => {alert('foo')}} >LET'S GO</Button> */}
             
             
             
@@ -85,12 +71,10 @@ const MapContainer = (props) => {
 }
 
 
-
+// margin: auto was really messing me up here earlier
 const mapStyles = {
     height: '100%',
-    width: '50%',
-    margin: 'auto',
-    marginRight: '27em', // this is not the greatest
+    width: '65%',
 };
 
 export default GoogleApiWrapper({
