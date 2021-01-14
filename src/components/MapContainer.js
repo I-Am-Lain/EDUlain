@@ -44,7 +44,7 @@ const MapContainer = (props) => {
                 google={props.google}
                 zoom={12}
                 style={mapStyles}
-                initialCenter={props.rentals[0]} // will probably have to change this for re-searching
+                initialCenter={{ lat: props.rentals[0].lat, lng: props.rentals[0].lng}} // will probably have to change this for re-searching
                 onClick={() => console.log(props)}
                 // center={props.center}
             >
@@ -57,7 +57,7 @@ const MapContainer = (props) => {
                         lat: pro.lat,
                         lng: pro.lng
                         }}
-                        onClick={() => console.log("You clicked me!")} />
+                        onClick={() => alert(`I'm at ${pro.address} for $${pro.price_min}/month!!`)} />
                     })
                 }
                 {/* <Button variant="warning" onClick={() => {alert('foo')}} >LET'S GO</Button> */}

@@ -104,7 +104,31 @@ const Services = (props) => {
 
             // console.log(json.properties.map(pro => {return {lat: pro.address.lat, lng: pro.address.lon}}))
 
-            setRentals(json.properties.map(pro => {return {lat: pro.address.lat, lng: pro.address.lon}}))
+            console.log(json)
+
+            // img
+            // price
+            // unit style, # bathrooms
+            // address
+            // link to Realtor page or whatever
+            const numberOfRentals = json.meta.matching_rows
+
+            setRentals(json.properties.map(pro => {
+                return {
+                    lat: pro.address.lat, 
+                    lng: pro.address.lon, 
+                    photos: pro.photos, 
+                    price_min: pro.community.price_min, 
+                    price_max: pro.community.price_max,
+                    beds_min: pro.community.beds_min,
+                    beds_max: pro.community.beds_max,
+                    baths_min: pro.community.baths_min,
+                    baths_max: pro.community.baths_max,
+                    address: pro.address.line,
+                    link: pro.rdc_web_url,
+                    numberOfRentals: numberOfRentals
+                }
+            }))
 
             setThing(true)
         })
@@ -118,7 +142,7 @@ const Services = (props) => {
 
     thing ?
     <StyledMapPage>
-        <CardContainer />
+        <CardContainer myInput={text} rentals={rentals} />
         <MapContainer myInput={text} rentals={rentals} />
     </StyledMapPage>
     :
