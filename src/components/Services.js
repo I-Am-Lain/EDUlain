@@ -9,13 +9,14 @@ import CardContainer from './CardContainer'
 
 
 
+
 const StyledFundPage = styled(Container)`
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     
-    background: url('https://www.nyhabitat.com/blog/wp-content/uploads/2015/11/NYC-fire-escape-apartment-buildings-low-rise-Manhattan.jpg') no-repeat center center fixed;
+    background: url('https://images.adsttc.com/media/images/5cfe/f60b/284d/d191/4200/0370/slideshow/Night_view_at_the_terrace.jpg') no-repeat center center fixed;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -41,7 +42,6 @@ const StyledInputGroup = styled(InputGroup)`
 
 const StyledInput = styled(FormInput)`
     width: 40%;
-    margin-bottom: 2em;
     font-size: 40px;
 
 `;
@@ -102,17 +102,11 @@ const Services = (props) => {
         .then(resp => resp.json())
         .then(json => {
 
-            // console.log(json.properties.map(pro => {return {lat: pro.address.lat, lng: pro.address.lon}}))
-
             console.log(json)
 
-            // img
-            // price
-            // unit style, # bathrooms
-            // address
-            // link to Realtor page or whatever
             const numberOfRentals = json.meta.matching_rows
 
+            // price_min cannot be found or read on some properties? (try searching Muskegon)
             setRentals(json.properties.map(pro => {
                 return {
                     lat: pro.address.lat, 
@@ -147,8 +141,13 @@ const Services = (props) => {
     </StyledMapPage>
     :
     <StyledFundPage>
-
-        <h1 style={{color: 'black', fontSize: '40px', marginTop: '3.5em'}}>Find Affordable Off-Campus Housing Today!</h1>
+        
+        <StyledFundCard style={{backgroundColor: 'black', opacity: '80%'}}> 
+            <CardBody>
+                <h1 style={{color: 'white', fontSize: '50px', fontWeight: 'bold'}} >Find Affordable Off-Campus Housing Today</h1>
+            </CardBody>
+        </StyledFundCard>
+        
 
         <StyledInputGroup>
             <StyledInput placeholder="Enter a city (e.g. St. Louis)" onChange={val => setText(val.target.value)} />
