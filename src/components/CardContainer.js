@@ -13,7 +13,7 @@ const StyledCardContainer = styled(Container)`
 
 const StyledRentalCard = styled(Card)`
 
-    margin-top: 2em;
+    margin-top: .5em;
     font-size: 22px;
 `;
 
@@ -132,7 +132,7 @@ const CardContainer = (props) => {
             <Row>
                 <Col>
                     <StyledRentalCard>
-                        <CardImg src={props.rentals[0].photos[0].href} style={{ maxWidth: '100%', height: '12em'}} />
+                        <CardImg src={props.rentals[0].photos[0].href} style={{ maxWidth: '100%', height: '13em'}} />
 
                         <CardBody>
                             <CardTitle><h2><b>${props.rentals[0].price_min}/mo</b></h2></CardTitle>
@@ -146,7 +146,7 @@ const CardContainer = (props) => {
 
                 <Col>
                     <StyledRentalCard>
-                        <CardImg src={props.rentals[1].photos[0].href} style={{ maxWidth: '100%', height: '12em'}} />
+                        <CardImg src={props.rentals[1].photos[0].href} style={{ maxWidth: '100%', height: '13em'}} />
 
                         <CardBody>
                             <CardTitle><h2><b>${props.rentals[1].price_min}/mo</b></h2></CardTitle>
@@ -162,7 +162,7 @@ const CardContainer = (props) => {
             <Row>
                 <Col>
                     <StyledRentalCard>
-                        <CardImg src={props.rentals[2].photos[0].href} style={{ maxWidth: '100%', height: '12em'}} />
+                        <CardImg src={props.rentals[2].photos[0].href} style={{ maxWidth: '100%', height: '13em'}} />
 
                         <CardBody>
                             <CardTitle><h2><b>${props.rentals[2].price_min}/mo</b></h2></CardTitle>
@@ -176,7 +176,7 @@ const CardContainer = (props) => {
 
                 <Col>
                     <StyledRentalCard>
-                        <CardImg src={props.rentals[3].photos[0].href} style={{ maxWidth: '100%', height: '12em'}} />
+                        <CardImg src={props.rentals[3].photos[0].href} style={{ maxWidth: '100%', height: '13em'}} />
 
                         <CardBody>
                             <CardTitle><h2><b>${props.rentals[3].price_min}/mo</b></h2></CardTitle>
