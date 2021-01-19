@@ -131,6 +131,10 @@ const Services = (props) => {
 
             setThing(true)
         })
+        .catch(e => {
+            console.log(e)
+            alert(e)
+        })
 
 
         // error
