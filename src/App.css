@@ -11,6 +11,7 @@
   align-items: center;
   /* justify-content: center; */
   font-size: calc(10px + 2vmin);
+  font-family: "Poppins", Roboto Regular, serif;
 }
 
 .form{
@@ -64,7 +65,8 @@
   background-image: url('http://ld-wp.template-help.com/monstroid1/v1/prod-13289/wp-content/uploads/2017/11/home4_bg3.jpg');
   background-size: cover;
   position: relative;
-  height: 675px;
+  /* height: 675px; */
+  height: 25em;
 }
 
 body, html {
@@ -166,9 +168,10 @@ body, html {
 
 .solution-content{
   position: relative;
-  top: 130px;
-  left: 1025px;
-  width: 525px;
+  top: 5em;
+  left: 60vw;
+  width: 20em;
+
 }
 
 .solution-content h2{

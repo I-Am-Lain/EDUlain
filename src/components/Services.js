@@ -7,9 +7,7 @@ import MapContainer from './MapContainer'
 import CardContainer from './CardContainer'
 
 
-
-
-
+// Fund Splash Page Container
 const StyledFundPage = styled(Container)`
     display: flex;
     flex-direction: column;
@@ -29,6 +27,7 @@ const StyledFundPage = styled(Container)`
     font-family: "Poppins", Roboto Regular, serif;
 `;
 
+// Splash Page ENTIRE Search Bar
 const StyledInputGroup = styled(InputGroup)`
     display: flex;
     flex-direction: row;
@@ -44,16 +43,20 @@ const StyledInputGroup = styled(InputGroup)`
 
 `;
 
+// Just bar
 const StyledInput = styled(FormInput)`
     font-size: 40px;
 
 `;
 
+// Just button
 const StyledButton = styled(Button)`
     font-size: 40px;
     background-color: rgb(18, 100, 222);
 `;
 
+
+// Top and bottom cards................may want to change this later
 const StyledFundCard = styled(Card)`
     display: flex;
     flex-direction: column;
@@ -66,7 +69,6 @@ const StyledFundCard = styled(Card)`
     opacity: 80%;
     border-radius: .25em;
 `;
-
 
 
 /* justify-content: center == was producing weird display */
@@ -86,7 +88,6 @@ const StyledMapPage = styled(Container)`
 `;
 
 
-
 const Services = (props) => { 
 
     const [thing, setThing] = useState(false)
@@ -94,8 +95,8 @@ const Services = (props) => {
     const [rentals, setRentals] = useState([{ lat: 42.2808, lng: -83.7430}])
 
 
+
     const handleClick = () => {
-        //  NEED TO ADD VALIDATION, OR BETTER WAY TO TAKE A RAW SEARCH
         //  OR -- USE GOOGLE MAPS AUTOCOMPLETE FOR PLACES
         fetch(`https://realtor.p.rapidapi.com/properties/v2/list-for-rent?city=${text.split(', ').slice(0, -1).join('%20')}&state_code=${text.split(' ')[text.split(' ').length - 1]}&limit=50&offset=0&sort=relevance`, {
             "method": "GET",
@@ -135,18 +136,13 @@ const Services = (props) => {
             console.log(e)
             alert(e)
         })
-
-
-        // error
-        // .catch error handling
     }
 
+
     
-
-
   return (
 
-
+    
     thing ?
     <StyledMapPage>
         <CardContainer myInput={text} rentals={rentals} />
@@ -182,6 +178,8 @@ const Services = (props) => {
         </StyledFundCard>
 
     </StyledFundPage>
+
+
     )
 };
 
