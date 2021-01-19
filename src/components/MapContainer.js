@@ -42,7 +42,7 @@ const MapContainer = (props) => {
     return(
             <Map
                 google={props.google}
-                zoom={12}
+                zoom={8}
                 style={mapStyles}
                 initialCenter={{ lat: props.rentals[0].lat, lng: props.rentals[0].lng}} // will probably have to change this for re-searching
                 onClick={() => console.log(props)}

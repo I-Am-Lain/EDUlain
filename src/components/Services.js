@@ -26,6 +26,7 @@ const StyledFundPage = styled(Container)`
     top: 110px;
     border: 5px green solid;
     bottom: 0px;
+    font-family: "Poppins", Roboto Regular, serif;
 `;
 
 const StyledInputGroup = styled(InputGroup)`
@@ -34,20 +35,23 @@ const StyledInputGroup = styled(InputGroup)`
     align-items: center;
     justify-content: center;
 
-    width: 40%;
+    width: 48%;
     margin-top: 2em;
     margin-bottom: 2em;
+
+    border: 4px gray solid;
+    border-radius: .25em;
 
 `;
 
 const StyledInput = styled(FormInput)`
-    width: 40%;
     font-size: 40px;
 
 `;
 
 const StyledButton = styled(Button)`
     font-size: 40px;
+    background-color: rgb(18, 100, 222);
 `;
 
 const StyledFundCard = styled(Card)`
@@ -60,6 +64,7 @@ const StyledFundCard = styled(Card)`
     
     font-size: 22px;
     opacity: 80%;
+    border-radius: .25em;
 `;
 
 
@@ -75,7 +80,7 @@ const StyledMapPage = styled(Container)`
 
     position: absolute;
     top: 110px;
-    border: 5px purple solid;
+    // border: 5px purple solid;
     bottom: 0px;
     
 `;
@@ -92,7 +97,7 @@ const Services = (props) => {
     const handleClick = () => {
         //  NEED TO ADD VALIDATION, OR BETTER WAY TO TAKE A RAW SEARCH
         //  OR -- USE GOOGLE MAPS AUTOCOMPLETE FOR PLACES
-        fetch(`https://realtor.p.rapidapi.com/properties/v2/list-for-rent?city=${text.split(' ').join('%20')}&state_code=MI&limit=50&offset=0&sort=relevance`, {
+        fetch(`https://realtor.p.rapidapi.com/properties/v2/list-for-rent?city=${text.split(', ').slice(0, -1).join('%20')}&state_code=${text.split(' ')[text.split(' ').length - 1]}&limit=50&offset=0&sort=relevance`, {
             "method": "GET",
             "headers": {
                 "x-rapidapi-key": process.env.REACT_APP_RAPID_API_KEY,
@@ -126,6 +131,10 @@ const Services = (props) => {
 
             setThing(true)
         })
+
+
+        // error
+        // .catch error handling
     }
 
     
@@ -144,7 +153,7 @@ const Services = (props) => {
         
         <StyledFundCard style={{backgroundColor: 'black', opacity: '80%'}}> 
             <CardBody>
-                <h1 style={{color: 'white', fontSize: '50px', fontWeight: 'bold'}} >Find Affordable Off-Campus Housing Today</h1>
+                <h1 style={{color: 'white', fontSize: '50px', fontWeight: 'bold', fontFamily: 'Poppins Bold'}} >Find Affordable Off-Campus Housing Today</h1>
             </CardBody>
         </StyledFundCard>
         
@@ -161,7 +170,7 @@ const Services = (props) => {
             </InputGroupAddon>
         </StyledInputGroup>
 
-        <StyledFundCard> 
+        <StyledFundCard style={{width: '40%'}}> 
             <CardBody>
                 EDUrain is committed to helping students find the perfect apartment, 
                 home, or studio rental around your college campus in just minutes!

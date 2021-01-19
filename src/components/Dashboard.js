@@ -66,7 +66,10 @@ class Dashboard extends React.Component {
                     <div className="card-body">
                         <h2 className="card-title">Find Housing</h2>
                         <p className="card-text">yes plz</p>
-                        <Button variant="primary" onClick={() => this.setState({ housingShow: true})}>
+                        {/* <Button variant="primary" onClick={() => this.setState({ housingShow: true})}>
+                            Let's Go!!!
+                        </Button> */}
+                        <Button variant="primary" onClick={() => this.props.history.push('/Services')}>
                             Let's Go!!!
                         </Button>
 

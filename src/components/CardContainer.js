@@ -5,14 +5,14 @@ import styled from 'styled-components';
 import { FaBed, FaShower } from "react-icons/fa";
 
 const StyledCardContainer = styled(Container)`
-    border: 5px blue solid;
+    // border: 5px blue solid;
     width: 35%;
     margin: 0;
 
 `;
 
 const StyledRentalCard = styled(Card)`
-
+    border: 2px grey solid;
     margin-top: .5em;
     font-size: 22px;
 `;
@@ -132,7 +132,7 @@ const CardContainer = (props) => {
             <Row>
                 <Col>
                     <StyledRentalCard>
-                        <CardImg src={props.rentals[0].photos[0].href} style={{ maxWidth: '100%', height: '13em'}} />
+                        <CardImg src={props.rentals[0].photos[0].href} style={{ maxWidth: '100%', height: '13.5em'}} />
 
                         <CardBody>
                             <CardTitle><h2><b>${props.rentals[0].price_min}/mo</b></h2></CardTitle>
@@ -146,7 +146,7 @@ const CardContainer = (props) => {
 
                 <Col>
                     <StyledRentalCard>
-                        <CardImg src={props.rentals[1].photos[0].href} style={{ maxWidth: '100%', height: '13em'}} />
+                        <CardImg src={props.rentals[1].photos[0].href} style={{ maxWidth: '100%', height: '13.5em'}} />
 
                         <CardBody>
                             <CardTitle><h2><b>${props.rentals[1].price_min}/mo</b></h2></CardTitle>
@@ -162,7 +162,7 @@ const CardContainer = (props) => {
             <Row>
                 <Col>
                     <StyledRentalCard>
-                        <CardImg src={props.rentals[2].photos[0].href} style={{ maxWidth: '100%', height: '13em'}} />
+                        <CardImg src={props.rentals[2].photos[0].href} style={{ maxWidth: '100%', height: '13.5em'}} />
 
                         <CardBody>
                             <CardTitle><h2><b>${props.rentals[2].price_min}/mo</b></h2></CardTitle>
@@ -176,7 +176,7 @@ const CardContainer = (props) => {
 
                 <Col>
                     <StyledRentalCard>
-                        <CardImg src={props.rentals[3].photos[0].href} style={{ maxWidth: '100%', height: '13em'}} />
+                        <CardImg src={props.rentals[3].photos[0].href} style={{ maxWidth: '100%', height: '13.5em'}} />
 
                         <CardBody>
                             <CardTitle><h2><b>${props.rentals[3].price_min}/mo</b></h2></CardTitle>
