@@ -301,8 +301,6 @@ body, html {
   border-radius: 1em;
   width: 40vw;
   height: 45vh;
-
-  opacity: 75% !important;
 }
 
 .advisors-content .advisors-card-bg p{
