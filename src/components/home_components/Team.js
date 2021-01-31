@@ -23,28 +23,16 @@ const Team = () => (
                     <p><span>CEO</span></p>
                 </div>
 
-                <div className='team-card'>
-                    <img src='https://edurain.org/wp-content/uploads/2017/03/0-2-150x150.jpg' alt='Cameron Sumpter'/>
-                    <a href='/team/cameron-sumpter'><span>Cameron Sumpter</span></a>
-                    <p><span>CTO, Developer</span></p>
+                <div className='team-card my-card'>
+                    <img src='https://edurain.org/wp-content/uploads/2017/11/profile.jpg' alt='Sabree Blackmon'/>
+                    <a href='/team/sabree-blackmon'><span>Sabree Blackmon</span></a>
+                    <p><span>CTO, Systems & Security</span></p>
                 </div>
 
                 <div className='team-card'>
                     <img src='https://edurain.org/wp-content/uploads/2017/03/0-3-150x150.jpg' alt='Arron Zheng'/>
                     <a href='/team/arron-zheng'><span>Arron Zheng</span></a>
                     <p><span>Co-Founder, <br/> Developer</span></p>
-                </div>
-
-                <div className='team-card'>
-                    <img src='https://edurain.org/wp-content/uploads/2017/03/0-5-150x150.jpg' alt='Krishna Kurar'/>
-                    <a href='/team/krishna-kurar'><span>Krishna Kurar</span></a>
-                    <p><span>Business <br/> Development</span></p>
-                </div>
-
-                <div className='team-card'>
-                    <img src='https://edurain.org/wp-content/uploads/2017/03/0-4-150x150.jpg' alt='Will Wang'/>
-                    <a href='/team/will-wang'><span>Will <br/> Wang</span></a>
-                    <p><span>Developer</span></p>
                 </div>
 
                 <div className='team-card'>
@@ -57,17 +45,6 @@ const Team = () => (
 
 
             <div className='the-a-team'>
-                <div className='team-card'>
-                    <img src='https://edurain.org/wp-content/uploads/2020/06/0-10-150x150.jpg' alt='Cole Makuch'/>
-                    <a href='/team/cole-makuch'><span>Cole Makuch</span></a>
-                    <p><span>Marketing and <br/> Business <br/> Development</span></p>
-                </div>
-
-                <div className='team-card'>
-                    <img src='https://edurain.org/wp-content/uploads/2016/06/13-Brian-Murphey-_-LinkedIn-150x150.png' alt='Leda Liang'/>
-                    <a href='/team/leda-liang'><span>Leda <br/> Liang</span></a>
-                    <p><span>Developer</span></p>
-                </div>
 
                 <div className='team-card'>
                     <img src='https://edurain.org/wp-content/uploads/2020/06/0-9-150x150.jpg' alt='David Zetley'/>
@@ -80,17 +57,11 @@ const Team = () => (
                     <a href='/team/tommy-dong'><span>Tommy Dong</span></a>
                     <p><span>Developer</span></p>
                 </div>
-
-                <div className='team-card'>
-                    <img src='https://edurain.org/wp-content/uploads/2020/06/0-8-150x150.jpg' alt='Zach Fisher'/>
-                    <a href='/team/zach-fisher'><span>Zach Fisher</span></a>
-                    <p><span>Marketing and <br/> Business <br/> Development</span></p>
-                </div>
                 
                 <div className='team-card my-card'>
                     <img src='https://vignette.wikia.nocookie.net/sel/images/6/65/Lain_s071.jpg/revision/latest?cb=20100513203649' alt='William Vetter'/>
-                    <a href='/team/william-vetter'><span>?????? ??????</span></a>
-                    <p><span>??????</span></p>
+                    <a href='/team/william-vetter'><span>William Vetter</span></a>
+                    <p><span>Developer</span></p>
                 </div>
             </div>
 

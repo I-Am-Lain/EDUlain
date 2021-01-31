@@ -5,14 +5,16 @@ const Advisors = () => (
     
     <div className='advisors'>
         <div className='advisors-content'>
-            <h2>OUR ADVISORS</h2>
-            <hr />
+            <div className='advisors-card-bg'>
+                <h2>OUR ADVISORS</h2>
+                <hr />
 
-            <p>
-                Our advisors range from Industry Experts to 
-                Admissions Directors. We’re always looking for 
-                accomplished members to join our Board!
-            </p>
+                <p>
+                    Our advisors range from Industry Experts to 
+                    Admissions Directors. We’re always looking for 
+                    accomplished members to join our Board.
+                </p>
+            </div>
             
             <div className='advisors-container'>
                 <div className='advisors-card'>

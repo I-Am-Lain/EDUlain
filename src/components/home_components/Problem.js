@@ -17,7 +17,7 @@ const Problem = (props) => (
                 We can get you through the maze – whether you are a student, parent, 
                 college access organization, admission officer, or college financial aid officer.
             </p>
-            <Button primary onClick={() => props.history.push('/login')} >Get Aid Now!</Button>
+            <Button style={{width: '15em'}} primary onClick={() => props.history.push('/login')} >Learn More</Button>
 
         </div>
     </div>

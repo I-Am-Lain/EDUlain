@@ -80,7 +80,7 @@ body, html {
   background-attachment: fixed;
   background-size: cover;
   position: relative;
-  height: 1750px;
+  height: 1900px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -100,9 +100,18 @@ body, html {
 .offers h2{
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   position: relative;
-  top: 120px;
-  font-size: 39px;
+  top: 10vh;
+  font-size: calc(22px + 1vw);
+  font-weight: bold;
+  text-decoration: underline;
   
+}
+
+@media (max-width: 1400px){
+  .offers h2{
+    top: 17vh;
+    left: 22vw;
+  }
 }
 
 .offer-cards{
@@ -118,16 +127,16 @@ body, html {
   display: flex;
   flex-direction: row;
   border: 3px black solid;
-  width: 565px;
-  height: 200px;
-  margin: 20px;
-  padding-right: 100px;
+  width: 30vw;
+  height: 10vw;
+  margin: 1em;
+  padding-right: 3vw;
 }
 
 .offers-file-icon{
   height: 100px;
   color: rgb(224, 22, 157);
-  margin-top: 45px;
+  margin-top: 4vh;
   margin-right: 20px;
   margin-left: 47px;
 }
@@ -135,13 +144,24 @@ body, html {
 .offers-fund-icon{
   height: 68px;
   color: rgb(224, 22, 157);
-  margin-top: 50px;
+  margin-top: 4vh;
   margin-right: 20px;
   margin-left: 40px;
 }
 
 .offer-card-right-half{
-  margin-top: 60px;
+  margin-top: 5vh;
+}
+
+@media (max-width: 1400px){
+  .offer-card-right-half{
+    margin-top: 2vh;
+  }
+
+  .offers-file-icon{
+    margin-top: 2vh;
+  }
+
 }
 
 .offer-card-right-half p{
@@ -149,6 +169,11 @@ body, html {
   font-size: 14px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-weight: 600;
+}
+
+
+.offer-card-right-half h3{
+  text-decoration: underline;
 }
 
 .problem-content{
@@ -264,13 +289,26 @@ body, html {
   align-items: center;
   position: relative;
   top: 165px;
-  color: yellow;
+  color: white;
 }
 
-.advisors-content p{
-  margin-top: 20px;
+.advisors-card-bg{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  opacity: 70%;
+  border-radius: 1em;
+  width: 40vw;
+  height: 45vh;
+}
+
+.advisors-content .advisors-card-bg p{
   width: 420px;
   text-align: center;
+  color: black;
+  font-style: italic;
 }
 
 
@@ -282,7 +320,7 @@ body, html {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-top: 100px;
+  margin-top: 10vh;
 }
 
 .advisors-card{
@@ -297,18 +335,25 @@ body, html {
   word-wrap: break-word;
 }
 
-.advisors-content h2{
+.advisors-content .advisors-card-bg h2{
   font-weight: 600;
-  font-size: 39px;
+  font-size: calc(20px + 1em);
   font-family: Georgia, 'Times New Roman', Times, serif;
+  color: black;
 }
 
 .advisors-card h3{
   font-size: 35px;
+  color: white;
+  background-color: black;
+  border-radius: .5em;
 }
 
 .advisors-card p{
   font-size: 20px;
+  color: white;
+  background-color: black;
+  border-radius: .5em;
 }
 
 .advisors-card span{
