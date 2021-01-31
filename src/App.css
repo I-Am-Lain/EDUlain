@@ -302,7 +302,7 @@ body, html {
   width: 40vw;
   height: 45vh;
 
-  opacity: 75%;
+  opacity: 75% !important;
 }
 
 .advisors-content .advisors-card-bg p{
