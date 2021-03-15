@@ -8,7 +8,15 @@ const Problem = (props) => (
     
     <div className='problem'>
         <div className='problem-content'>
-            <h2>PROBLEM: FINANCIAL AID RESOURCES ARE A NIGHTMARE TO TRAVERSE</h2>
+
+            <h2>PLEASE EXCUSE MISSING IMAGES! ='(</h2>
+            <hr />
+
+            <p>
+                We are in the middle of reconstruction.
+            </p>
+            <Button style={{width: '15em'}} primary onClick={() => props.history.push('/login')} >Log In</Button>
+            {/* <h2>PROBLEM: FINANCIAL AID RESOURCES ARE A NIGHTMARE TO TRAVERSE</h2>
             <hr />
 
             <p>
@@ -17,7 +25,7 @@ const Problem = (props) => (
                 We can get you through the maze – whether you are a student, parent, 
                 college access organization, admission officer, or college financial aid officer.
             </p>
-            <Button style={{width: '15em'}} primary onClick={() => props.history.push('/login')} >Learn More</Button>
+            <Button style={{width: '15em'}} primary onClick={() => props.history.push('/login')} >Learn More</Button> */}
 
         </div>
     </div>
