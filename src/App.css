@@ -4,37 +4,22 @@
 @import "./styles/About.css";
 
 .wrapper {
-  /* background-color: #282c34; */
-  /* background-size: 100%; */
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* justify-content: center; */
   font-size: calc(10px + 2vmin);
   font-family: "Poppins", Roboto Regular, serif;
 }
-
-.form{
-  /* border: 2px red solid; */
-}
-
 
 .NavBar{
   background-color: white;
   display: flex;
   position: fixed;
-
-
   align-content: center;
   align-items: center;
-  
   width: 100%;
   z-index: 1; /*always keeps NavBar on top*/
-
 }
-
-
-
 
 .nav-link:hover{
   background: red !important;
@@ -47,7 +32,6 @@
 .home-container{
   top: 100px;    /* Positions the Home/ components just below NavBar */
   position: absolute;
-  /* border: 2px yellow solid; */
   right: 0; bottom: 0; left: 0;
 }
 
@@ -56,7 +40,6 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  /* border: 2px red solid; */
   height: 1000px;
   position: relative;
 }
@@ -65,7 +48,6 @@
   background-image: url('http://ld-wp.template-help.com/monstroid1/v1/prod-13289/wp-content/uploads/2017/11/home4_bg3.jpg');
   background-size: cover;
   position: relative;
-  /* height: 675px; */
   height: 25em;
 }
 
@@ -104,7 +86,6 @@ body, html {
   font-size: calc(22px + 1vw);
   font-weight: bold;
   text-decoration: underline;
-  
 }
 
 @media (max-width: 1400px){
@@ -161,11 +142,9 @@ body, html {
   .offers-file-icon{
     margin-top: 2vh;
   }
-
 }
 
 .offer-card-right-half p{
-  /* border: 2px green solid; */
   font-size: 14px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-weight: 600;
@@ -177,7 +156,6 @@ body, html {
 }
 
 .problem-content{
-  /* border: 2px green solid; */
   position: absolute;
   top: 300px;
   width: 550px;
@@ -196,7 +174,6 @@ body, html {
   top: 5em;
   left: 60vw;
   width: 20em;
-
 }
 
 .solution-content h2{
@@ -206,7 +183,6 @@ body, html {
 }
 
 .team{
-  /* border: 2px red solid; */
   height: 1300px;
   display: flex;
   flex-direction: column;
@@ -282,7 +258,6 @@ body, html {
   height: 150px;
 }
 
-
 .advisors-content{
   display: flex;
   flex-direction: column;
@@ -309,11 +284,6 @@ body, html {
   color: black;
   font-style: italic;
 }
-
-
-
-
-
 
 .advisors-container{
   display: flex;
@@ -355,7 +325,6 @@ body, html {
   border-radius: .5em;
 }
 
-
 .advisors-card span{
   font-size: 20px;
 }
@@ -367,8 +336,6 @@ body, html {
 .sponsors-container img{
   margin: 0 50px 0 50px;
 }
-
-
 
 .login-container div button{
   height: 17px;
