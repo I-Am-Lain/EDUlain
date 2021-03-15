@@ -19,7 +19,6 @@ const disabledLink = {
     textDecoration: 'none',
     color: 'black',
     background: 'grey',
-
 }
 
 const NavBar = (props) => 

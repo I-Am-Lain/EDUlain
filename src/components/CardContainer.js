@@ -38,27 +38,19 @@ const StyledFormSelect = styled(FormSelect)`
     border-radius: .25em;
 `;
 
-
-
-
 //SEARCH BAR BUTTON STUFF ABOVE CARDS
 const StyledInputGroup = styled(InputGroup)`
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-
-
     margin-bottom: .4em;
-
 `;
-
 
 //padding-right helps grow the search bar
 const StyledInput = styled(FormInput)`
     margin-bottom: 2em;
     font-size: 32px;
-
     border-radius: .25em;
 `;
 
@@ -77,9 +69,7 @@ const StyledMoreSelect = styled(FormSelect)`
     line-height: 1em;
     border: 2px #2282F6 solid;
     margin-right: 3em;
-
 `;
-
 
 // The Radio Toggle..... def need to fix this later
 const StyledFormCheckbox = styled(FormCheckbox)`
@@ -87,7 +77,6 @@ const StyledFormCheckbox = styled(FormCheckbox)`
     line-height: 1em;
     // border: 2px #2282F6 solid;
 `;
-
 
 const CardContainer = (props) => {
 
@@ -229,15 +218,7 @@ const CardContainer = (props) => {
                         </StyledRentalCard>
                     </Col>
                 </Row>
-
-
-
-
-        </StyledCardContainer>
-            
-            
-            
-
+        </StyledCardContainer> 
     );
 }
 

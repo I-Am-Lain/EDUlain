@@ -7,8 +7,6 @@ import { withRouter } from "react-router-dom";
 class DeleteModal extends React.Component {
 
     handleClick = () => {
-        console.log('not yet :)')
-    
         // fetch(`https://edu-lain-api.herokuapp.com/api/v1/users/${this.props.auth.id}`, {method: 'DELETE'})
         // .then(resp => resp.json())
         // .then(json => 

@@ -70,10 +70,6 @@ const StyledFundCard = styled(Card)`
     border-radius: .25em;
 `;
 
-
-/* justify-content: center == was producing weird display */
-/* justify-content: flex-start more proper */
-
 /* this, or the @media container, has an inner padding of 15px on left and right sides.*/
 const StyledMapPage = styled(Container)`
     display: flex;
@@ -94,10 +90,7 @@ const Services = (props) => {
     const [text, setText] = useState('')
     const [rentals, setRentals] = useState([{ lat: 42.2808, lng: -83.7430}])
 
-
-
     const handleClick = () => {
-        //  OR -- USE GOOGLE MAPS AUTOCOMPLETE FOR PLACES
         fetch(`https://realtor.p.rapidapi.com/properties/v2/list-for-rent?city=${text.split(', ').slice(0, -1).join('%20')}&state_code=${text.split(' ')[text.split(' ').length - 1]}&limit=50&offset=0&sort=relevance`, {
             "method": "GET",
             "headers": {
@@ -108,11 +101,8 @@ const Services = (props) => {
         .then(resp => resp.json())
         .then(json => {
 
-            console.log(json)
-
             const numberOfRentals = json.meta.matching_rows
 
-            // price_min cannot be found or read on some properties? (try searching Muskegon)
             setRentals(json.properties.map(pro => {
                 return {
                     lat: pro.address.lat, 
@@ -129,7 +119,6 @@ const Services = (props) => {
                     numberOfRentals: numberOfRentals
                 }
             }))
-
             setThing(true)
         })
         .catch(e => {
@@ -141,11 +130,8 @@ const Services = (props) => {
     const handleTestClick = () => {
         alert('Sorry, this feature cannot be made public quite yet :<')
     }
-
-
     
   return (
-
     
     thing ?
     <StyledMapPage>

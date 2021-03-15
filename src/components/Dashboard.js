@@ -25,9 +25,6 @@ class Dashboard extends React.Component {
         }
     }
 
-    // might want componentWillUnmount for turning Profile Edit into a drop-down type of thing
-    // in case a user opens it, and then comes back
-
     render(){
         return(
             <div className='dashboard container-fluid'>
@@ -76,10 +73,6 @@ class Dashboard extends React.Component {
                         <HousingModal auth={this.props.auth} show={this.state.housingShow} onHide={() => this.setState({housingShow: false})} />
                     </div>
                 </div>
-
-                {/* <div className="progress">
-                    <div className="progress-bar" role="progressbar" style={{width: '25%'}} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
-                </div> */}
 
 
             </div>
