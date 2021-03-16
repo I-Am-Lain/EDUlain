@@ -3,9 +3,8 @@ import { connect } from 'react-redux'
 import Button from 'react-bootstrap/Button'
 
 import EditProfile from './EditProfile'
-import DeleteModal from './DeleteModal'
+// import DeleteModal from './DeleteModal'
 import UploadModal from './UploadModal'
-import Form from 'react-bootstrap/Form'
 
 import HousingModal from './HousingModal'
 
