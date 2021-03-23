@@ -36,7 +36,7 @@
 }
 
 .problem{
-  background-image: url('https://edurain.org/wp-content/uploads/2020/05/1105572-medium-2-e1592224769447.jpg');
+  background-image: url('https://edurain.org/img/resources-banner.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -167,6 +167,15 @@ body, html {
   font-weight: 600;
   font-size: 35px;
   font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: white;
+  border: 2px black solid;
+  border-radius: .5;
+}
+
+.problem-content p{
+  border: 2px black solid;  
+  background-color: white;
+  border-radius: .5;
 }
 
 .solution-content{
@@ -183,7 +192,7 @@ body, html {
 }
 
 .team{
-  height: 1300px;
+  height: 900px;
   display: flex;
   flex-direction: column;
   align-items: center;

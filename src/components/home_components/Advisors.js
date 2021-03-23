@@ -59,11 +59,11 @@ const Advisors = () => (
 
 
             <div className='sponsors-container'>
-                <img src='https://edurain.org/img/logos/stl-dba.jpg' alt='St. Louis DBA'/>
-                <img src='https://edurain.org/img/logos/balsa-logo.png' alt='The Balsa Foundation'/>
-                <img src='https://edurain.org/img/logos/impact-ventures.png' alt='Impact Ventures'/>
-                <img src='https://edurain.org/img/logos/iten-logo.png' alt='I T E N'/>
-                <img src='https://edurain.org/img/logos/skandalaris.png' alt='Skandalaris Center'/>
+                <img src='https://edurain.org/img/logos/stl-dba.jpg' style={{height: '200px'}} alt='St. Louis DBA'/>
+                <img src='https://edurain.org/img/logos/balsa-logo.png' style={{height: '200px'}} alt='The Balsa Foundation'/>
+                <img src='https://edurain.org/img/logos/impact-ventures.png' style={{height: '200px'}} alt='Impact Ventures'/>
+                <img src='https://edurain.org/img/logos/iten-logo.png' style={{height: '150px'}} alt='I T E N'/>
+                <img src='https://edurain.org/img/logos/skandalaris.png' style={{height: '150px'}} alt='Skandalaris Center'/>
             </div>
 
 

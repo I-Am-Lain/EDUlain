@@ -18,7 +18,7 @@ const Team = () => (
 
             <div className='the-a-team'>
                 <div className='team-card'>
-                    <img src='https://edurain.org/img/profile/Bryon.jpg' alt='Bryon Pierson'/>
+                    <img src='https://edurain.org/img/profile/Bryon.jpg' style={{height: '150px'}} alt='Bryon Pierson'/>
                     <a href='/team/bryon-pierson'><span>Bryon Pierson</span></a>
                     <p><span>CEO</span></p>
                 </div>
@@ -30,13 +30,13 @@ const Team = () => (
                 </div>
 
                 <div className='team-card'>
-                    <img src='https://edurain.org/img/profile/Arron.jpg' alt='Arron Zheng'/>
+                    <img src='https://edurain.org/img/profile/Arron.jpg' style={{height: '150px'}} alt='Arron Zheng'/>
                     <a href='/team/arron-zheng'><span>Arron Zheng</span></a>
                     <p><span>Co-Founder, <br/> Developer</span></p>
                 </div>
 
                 <div className='team-card'>
-                    <img src='https://edurain.org/img/profile/Tommy.jpg' alt='Tommy Dong'/>
+                    <img src='https://edurain.org/img/profile/Tommy.jpg' style={{height: '150px'}} alt='Tommy Dong'/>
                     <a href='/team/tommy-dong'><span>Tommy Dong</span></a>
                     <p><span>Developer</span></p>
                 </div>

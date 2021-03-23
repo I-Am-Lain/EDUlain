@@ -6,10 +6,10 @@
 }
 
 .mission-header{
-    background-image: url('https://edurain.org/wp-content/uploads/2020/06/graduation-min.jpg');
+    background-image: url('https://edurain.org/img/about-us-banner.jpg');
     position: relative;
     height: 183px;
-    background-position: 0 -550px;
+    background-position: 0 -450px;
     display: flex;
     flex-direction: column;
     align-items: center;
