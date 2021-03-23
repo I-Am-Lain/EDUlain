@@ -18,19 +18,19 @@ const Advisors = () => (
             
             <div className='advisors-container'>
                 <div className='advisors-card'>
-                    <img src='https://edurain.org/wp-content/uploads/2020/06/greg-taylor.png' alt='Greg Taylor'/>
+                    <img src='https://edurain.org/img/profile/Greg.jpg' alt='Greg Taylor'/>
                     <h3>Greg Taylor</h3>
                     <p><span>Former Vice President Operations Fontbonne university</span></p>
                 </div>
 
                 <div className='advisors-card'>
-                    <img src='https://edurain.org/wp-content/uploads/2020/06/Screen-Shot-2020-06-16-at-12.03.41-AM.png' alt='Joshua Walehwa'/>
-                    <h3>Joshua Walehwa</h3>
-                    <p>Associate Director of Admissions & Recruitment, Brown School Washington university Saint Louis</p>
+                    <img src='https://edurain.org/img/profile/Aaron.jpg' alt='Joshua Walehwa'/>
+                    <h3>Aaron Burcell</h3>
+                    <p>VP of Growth at Goldman Sachs</p>
                 </div>
 
                 <div className='advisors-card'>
-                    <img src='https://edurain.org/wp-content/uploads/2020/06/Screen-Shot-2020-06-16-at-12.03.17-AM.png' alt='Marie Thornton'/>
+                    <img src='https://edurain.org/img/profile/Marie.jpg' alt='Marie Thornton'/>
                     <h3>Marie Thornton</h3>
                     <p><span>Former Admissions Officer Ranken Technical College</span></p>
                 </div>
@@ -39,31 +39,31 @@ const Advisors = () => (
 
             <div className='advisors-container'>
                 <div className='advisors-card'>
-                    <img src='https://edurain.org/wp-content/uploads/2020/06/Screen-Shot-2020-06-16-at-12.02.02-AM.png' alt='Lisa Brougham'/>
-                    <h3>Lisa Brougham</h3>
-                    <p><span>Former School Counselor Saint Louis Public School District</span></p>
+                    <img src='https://edurain.org/img/profile/Al.jpg' alt='Al Nolan'/>
+                    <h3>Al Nolan</h3>
+                    <p><span>Solution Architect at Bottle Rocket</span></p>
                 </div>
                 
                 <div className='advisors-card'>
-                    <img src='https://edurain.org/wp-content/uploads/2020/06/unnamed-1.png' alt='Susan McLaughlin'/>
+                    <img src='https://edurain.org/img/profile/Susan.jpg' alt='Susan McLaughlin'/>
                     <h3>Susan McLaughlin</h3>
                     <p><span>Former VP of Marketing at Charter</span></p>
                 </div>
 
                 <div className='advisors-card'>
-                    <img src='https://edurain.org/wp-content/uploads/2020/06/Screen-Shot-2020-06-16-at-12.02.47-AM.png' alt='Mike Bynum'/>
-                    <h3>Mike Bynum</h3>
-                    <p><span>Accelerator Coordinator Stadia Ventures</span></p>
+                    <img src='https://edurain.org/img/profile/Jennifer.jpg' alt='Jennifer Bardot'/>
+                    <h3>Jennifer Bardot</h3>
+                    <p><span>Asst. VP Business Banking at Enterprise Bank & Trust</span></p>
                 </div>
             </div>
 
 
             <div className='sponsors-container'>
-                <img src='https://edurain.org/wp-content/uploads/2020/06/Screen-Shot-2020-06-21-at-6.57.07-PM-150x150.png' alt='St. Louis DBA'/>
-                <img src='https://edurain.org/wp-content/uploads/2020/06/balsa-logo_V_v3-transparent-150x150.png' alt='The Balsa Foundation'/>
-                <img src='https://edurain.org/wp-content/uploads/2020/06/XZCkVkVF-150x150.jpg' alt='Startup School'/>
-                <img src='https://edurain.org/wp-content/uploads/2020/06/ITEN-Logo_New2-1-150x150.png' alt='I T E N'/>
-                <img src='https://edurain.org/wp-content/uploads/2020/06/unnamed-3-150x150.jpg' alt='Center For Experiential Learning'/>
+                <img src='https://edurain.org/img/logos/stl-dba.jpg' alt='St. Louis DBA'/>
+                <img src='https://edurain.org/img/logos/balsa-logo.png' alt='The Balsa Foundation'/>
+                <img src='https://edurain.org/img/logos/impact-ventures.png' alt='Impact Ventures'/>
+                <img src='https://edurain.org/img/logos/iten-logo.png' alt='I T E N'/>
+                <img src='https://edurain.org/img/logos/skandalaris.png' alt='Skandalaris Center'/>
             </div>
 
 
