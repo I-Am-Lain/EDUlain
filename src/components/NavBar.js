@@ -45,14 +45,14 @@ const NavBar = (props) =>
             background: 'darkblue'
         }}
         >Mission</NavLink>
-        <NavLink
+        {/* <NavLink
         to="/about"
         exact
         style={link}
         activeStyle={{
             background: 'darkblue'
         }}
-        >About</NavLink>
+        >About</NavLink> */}
         <NavLink
         to="/services"
         exact
@@ -61,14 +61,14 @@ const NavBar = (props) =>
             background: 'darkblue'
         }}
         >Services</NavLink>
-        <NavLink
+        {/* <NavLink
         to="/contact"
         exact
         style={link}
         activeStyle={{
             background: 'darkblue'
         }}
-        >Contact Us</NavLink>
+        >Contact Us</NavLink> */}
         {
             props.auth ?  // if User is logged in
             <React.Fragment>
