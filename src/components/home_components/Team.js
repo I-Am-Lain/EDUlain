@@ -18,25 +18,25 @@ const Team = () => (
 
             <div className='the-a-team'>
                 <div className='team-card'>
-                    <img src='https://edurain.org/wp-content/uploads/2017/11/0-1-150x150.jpg' alt='Bryon Pierson'/>
+                    <img src='https://edurain.org/img/profile/Bryon.jpg' alt='Bryon Pierson'/>
                     <a href='/team/bryon-pierson'><span>Bryon Pierson</span></a>
                     <p><span>CEO</span></p>
                 </div>
 
                 <div className='team-card my-card'>
-                    <img src='https://edurain.org/wp-content/uploads/2017/11/profile.jpg' alt='Sabree Blackmon'/>
+                    <img src='https://edurain.org/img/profile/Sabree.jpg' alt='Sabree Blackmon'/>
                     <a href='/team/sabree-blackmon'><span>Sabree Blackmon</span></a>
                     <p><span>CTO, Systems & Security</span></p>
                 </div>
 
                 <div className='team-card'>
-                    <img src='https://edurain.org/wp-content/uploads/2017/03/0-3-150x150.jpg' alt='Arron Zheng'/>
+                    <img src='https://edurain.org/img/profile/Arron.jpg' alt='Arron Zheng'/>
                     <a href='/team/arron-zheng'><span>Arron Zheng</span></a>
                     <p><span>Co-Founder, <br/> Developer</span></p>
                 </div>
 
                 <div className='team-card'>
-                    <img src='https://edurain.org/wp-content/uploads/2020/06/0-7-150x150.jpg' alt='Tommy Dong'/>
+                    <img src='https://edurain.org/img/profile/Tommy.jpg' alt='Tommy Dong'/>
                     <a href='/team/tommy-dong'><span>Tommy Dong</span></a>
                     <p><span>Developer</span></p>
                 </div>
