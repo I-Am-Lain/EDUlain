@@ -36,36 +36,18 @@ const Team = () => (
                 </div>
 
                 <div className='team-card'>
-                    <img src='https://edurain.org/wp-content/uploads/2017/03/0-6-150x150.jpg' alt='Wesley Butler'/>
-                    <a href='/team/wesley-butler'><span>Wesley Butler</span></a>
-                    <p><span>Developer</span></p>
-                </div>
-            </div>
-
-
-
-            <div className='the-a-team'>
-
-                <div className='team-card'>
-                    <img src='https://edurain.org/wp-content/uploads/2020/06/0-9-150x150.jpg' alt='David Zetley'/>
-                    <a href='/team/david-zetley'><span>David Zetley</span></a>
-                    <p><span>UI/UX Design</span></p>
-                </div>
-
-                <div className='team-card'>
                     <img src='https://edurain.org/wp-content/uploads/2020/06/0-7-150x150.jpg' alt='Tommy Dong'/>
                     <a href='/team/tommy-dong'><span>Tommy Dong</span></a>
                     <p><span>Developer</span></p>
                 </div>
-                
+
+                                
                 <div className='team-card my-card'>
                     <img src='https://vignette.wikia.nocookie.net/sel/images/6/65/Lain_s071.jpg/revision/latest?cb=20100513203649' alt='William Vetter'/>
                     <a href='/team/william-vetter'><span>William Vetter</span></a>
                     <p><span>Developer</span></p>
                 </div>
             </div>
-
-
 
         </div>
     </div>

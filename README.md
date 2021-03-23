@@ -5,10 +5,9 @@ This is a fully deployed website, accessible at https://edu-lain.herokuapp.com/
 To Login, username: 'foo', password: 'bar'
 
 
-EDUlain was a 3-4 day project I initially built, re-creating the actual website of a company--EDUrain. Found at https://edurain.org
+EDUlain was a 3-4 day project I initially built, re-creating the actual website of a company--EDUrain. 
+Previously found at https://edurain.org
 
-
-!!! Some public images have been moved, please excuse any missing images in the meantime !!!
 
 Technology
 ----------
