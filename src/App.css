@@ -36,7 +36,7 @@
 }
 
 .problem{
-  background-image: url('https://edurain.org/img/resources-banner.jpg');
+  background-image: url('https://thumbs.dreamstime.com/b/boy-overwhelmed-papers-young-sitting-wooden-desk-piles-homework-paperwork-exasperated-expression-107289096.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -69,10 +69,11 @@ body, html {
 }
 
 .offers{
-  background-image: url('https://edurain.org/wp-content/uploads/2020/05/black-college-student-1.png');
+  background-image: url('https://images.hdqwalls.com/wallpapers/new-york-dark-city-night-lights-buildings-view-from-top-5k-vq.jpg');
   background-size: cover;
   position: relative;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   height: 1025px;
   display: flex;
   flex-direction: column;
@@ -86,6 +87,7 @@ body, html {
   font-size: calc(22px + 1vw);
   font-weight: bold;
   text-decoration: underline;
+  color: white;
 }
 
 @media (max-width: 1400px){
@@ -107,7 +109,9 @@ body, html {
 .offer-card{
   display: flex;
   flex-direction: row;
-  border: 3px black solid;
+  border: 3px white solid;
+  color: white;
+  background-color: rgba(8, 8, 94, .8);
   width: 30vw;
   height: 10vw;
   margin: 1em;
@@ -116,7 +120,7 @@ body, html {
 
 .offers-file-icon{
   height: 100px;
-  color: rgb(224, 22, 157);
+  color: rgb(22, 133, 224);
   margin-top: 4vh;
   margin-right: 20px;
   margin-left: 47px;
@@ -124,7 +128,7 @@ body, html {
 
 .offers-fund-icon{
   height: 68px;
-  color: rgb(224, 22, 157);
+  color: rgb(22, 133, 224);
   margin-top: 4vh;
   margin-right: 20px;
   margin-left: 40px;
@@ -153,13 +157,14 @@ body, html {
 
 .offer-card-right-half h3{
   text-decoration: underline;
+  color: white;
 }
 
 .problem-content{
   position: absolute;
   top: 300px;
   width: 550px;
-  left: 400px;   /* I'm gonna have to change this stuff so it 'flexes' around*/
+  left: 13rem;
   font-size: 26px;
 }
 
@@ -168,12 +173,10 @@ body, html {
   font-size: 35px;
   font-family: Georgia, 'Times New Roman', Times, serif;
   background-color: white;
-  border: 2px black solid;
   border-radius: .5;
 }
 
 .problem-content p{
-  border: 2px black solid;  
   background-color: white;
   border-radius: .5;
 }

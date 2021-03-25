@@ -22,7 +22,6 @@ const StyledFundPage = styled(Container)`
     
     position: absolute;
     top: 110px;
-    border: 5px green solid;
     bottom: 0px;
     font-family: "Poppins", Roboto Regular, serif;
 `;
