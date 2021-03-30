@@ -69,7 +69,7 @@ class Dashboard extends React.Component {
                             Let's Go!!!
                         </Button>
 
-                        <HousingModal auth={this.props.auth} show={this.state.housingShow} onHide={() => this.setState({housingShow: false})} />
+                        {/* <HousingModal auth={this.props.auth} show={this.state.housingShow} onHide={() => this.setState({housingShow: false})} /> */}
                     </div>
                 </div>
 
