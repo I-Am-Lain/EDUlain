@@ -20,6 +20,8 @@ import Mission from './components/Mission'
 import Services from './components/Services'
 import Contact from './components/Contact'
 
+import Fund from './components/Fund'
+
 import 'shards-ui/dist/css/shards.min.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -37,7 +39,7 @@ ReactDOM.render(
         <Route exact path='/' component={App} /> {/* App === Home */}
         <Route exact path='/mission' component={Mission} />
         <Route exact path='/about' component={About} />
-        <Route exact path='/services' component={Services} />
+        <Route exact path='/services' component={Fund} />
         <Route exact path='/contact' component={Contact} />
         <Route exact path='/login' component={Login} />
         <Route exact path='/dashboard' component={Dashboard}/>
