@@ -7,8 +7,8 @@ import CardContainer from './fund/CardContainer'
 import MobileToggleButton from './fund/MobileToggleButton'
 import PartnerContainer from './fund/PartnerContainer'
 
-// import splash from './assets/splash.jpg'
-// import { ReactComponent as Loupe } from './assets/loupe.svg';
+import splash from '../assets/splash.jpg'
+import { ReactComponent as Loupe } from '../assets/loupe.svg';
 
 // Fund Splash Page Container
 const StyledFundPage = styled(Container) `
