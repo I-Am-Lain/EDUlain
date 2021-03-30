@@ -6,7 +6,7 @@ import EditProfile from './EditProfile'
 // import DeleteModal from './DeleteModal'
 import UploadModal from './UploadModal'
 
-import HousingModal from './HousingModal'
+// import HousingModal from './HousingModal'
 
 
 class Dashboard extends React.Component {

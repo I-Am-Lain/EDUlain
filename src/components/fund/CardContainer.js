@@ -2,8 +2,8 @@ import React from 'react'
 import { Container, Row, Card, CardBody, CardTitle, CardImg, Button, FormSelect, FormInput, InputGroup, InputGroupAddon } from "shards-react";
 import styled from 'styled-components';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBed, faBath } from '@fortawesome/free-solid-svg-icons';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { faBed, faBath } from '@fortawesome/free-solid-svg-icons';
 
 import { ReactComponent as Loupe } from '../../assets/loupe.svg';
 import MyFormSelect from './MyFormSelect'
@@ -191,8 +191,8 @@ const CardContainer = (props) => {
                 <StyledCardBody>
                   <StyledCardTitle><b> ${rental.price_min}/mo </b></StyledCardTitle>
                   <p style={{ marginBottom: '0' }} >
-                    <FontAwesomeIcon icon={faBed} size={'2x'} style={{ marginRight: '.3rem' }} />{rental.beds_max} bedrooms
-                    <FontAwesomeIcon icon={faBath} size={'2x'} style={{ marginRight: '.3rem' }} />{rental.baths_max} bath(s)
+                    {rental.beds_max} bedrooms
+                    {rental.baths_max} bath(s)
                   </p>
 
                   <p style={{ marginBottom: '0' }} ><i>{rental.address}</i></p>

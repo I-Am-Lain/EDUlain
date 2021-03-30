@@ -2,6 +2,7 @@
 @import "./styles/Dashboard.css";
 @import "./styles/Mission.css";
 @import "./styles/About.css";
+/* @import './components/fund/MyMarker/styles.scss'; */
 
 .wrapper {
   display: flex;

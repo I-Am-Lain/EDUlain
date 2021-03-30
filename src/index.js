@@ -17,9 +17,9 @@ import Dashboard from './components/Dashboard'
 import Fafsa from './components/Fafsa'
 
 import Mission from './components/Mission'
-import Services from './components/Services'
 import Contact from './components/Contact'
 
+// import Services from './components/Services'
 import Fund from './components/Fund'
 
 import 'shards-ui/dist/css/shards.min.css';
