@@ -71,11 +71,11 @@ const Mission = () => (
                 <hr />
 
                 <div className='partnership-images-container'>
-                    <img src='https://edurain.org/wp-content/uploads/2020/06/Screen-Shot-2020-06-21-at-6.57.07-PM-150x150.png' alt='St. Louis DBA'/>
-                    <img src='https://edurain.org/wp-content/uploads/2020/06/balsa-logo_V_v3-transparent-150x150.png' alt='The Balsa Foundation'/>
-                    <img src='https://edurain.org/wp-content/uploads/2020/06/XZCkVkVF-150x150.jpg' alt='Startup School'/>
-                    <img src='https://edurain.org/wp-content/uploads/2020/06/ITEN-Logo_New2-1-150x150.png' alt='I T E N'/>
-                    <img src='https://edurain.org/wp-content/uploads/2020/06/unnamed-3-150x150.jpg' alt='Center For Experiential Learning'/>
+                    <img src='https://edurain.org/img/logos/stl-dba.jpg' alt='St. Louis DBA'/>
+                    <img src='https://edurain.org/img/logos/balsa-logo.png' alt='The Balsa Foundation'/>
+                    <img src='https://edurain.org/img/logos/impact-ventures.png' alt='Impact Ventures'/>
+                    <img src='https://edurain.org/img/logos/iten-logo.png' alt='I T E N'/>
+                    <img src='https://edurain.org/img/logos/skandalaris.png' alt='Skandalaris Center'/>
                 </div>
             </div>
         </div>
